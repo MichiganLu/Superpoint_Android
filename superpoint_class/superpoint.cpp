@@ -143,7 +143,7 @@ void Superpoint::get_subpixel_coordinate(const ncnn::Mat &out1, const std::vecto
                 final_height = final_height + out1[(width+x)+(height+y)*out1.w]/total_weight*(height+y);
             }
         }
-        cv::Point2f final_point(final_width, final_height);
+        cv::Point2f final_point(final_width*2, final_height*2);    //multiple 2 to scale back to 640,480
         final_kps.push_back(final_point);
     }
 }
@@ -155,8 +155,8 @@ void Superpoint::detect_and_compute(cv::Mat &img, std::vector<cv::Point2f> &fina
     preprocess(img, in);
 
     //forward
-    ncnn::Extractor ex = superpoint.create_extractor();
-    // ex.set_num_threads(6);
+    ncnn::Extractor ex = superpoint.create_extractor();       //maybe make it static
+    // ex.set_num_threads(4);
     ncnn::Mat out1;   //out1 for keypoints heatmap, of dim [1,1,240,320]
     ncnn::Mat out2;   //out2 for keypoints descriptor, of dim [1,256,240,320]
     ex.input("input.1", in);
@@ -164,7 +164,7 @@ void Superpoint::detect_and_compute(cv::Mat &img, std::vector<cv::Point2f> &fina
     ex.extract("output.2", out2);
 
     //extract keypoints
-    float threshold = 0.015;
+    float threshold = 0.003;
     std::vector<std::vector<float>> kps;    //kps of dim [N,3], 3 for width, height, confidence
     extract_points(kps, out1, threshold);
 

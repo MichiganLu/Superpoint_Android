@@ -23,7 +23,7 @@ class Superpoint
         ncnn::Net superpoint;
     public:
         Superpoint(char *param, char *bin);
-        ~Superpoint();
+        ~Superpoint(){};
         void preprocess(cv::Mat &img, ncnn::Mat &in);
         void extract_points(std::vector<std::vector<float>> &kps, const ncnn::Mat &out1, const float threshold);
         void nms(std::vector<std::vector<float>> &kps, std::vector<std::vector<float>> &nms_kps, const int &nms_radius);
