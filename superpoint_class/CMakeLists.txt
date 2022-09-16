@@ -98,15 +98,19 @@ elseif (CMAKE_SYSTEM_NAME STREQUAL "Android")
     link_directories("/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/ncnn/lib/arm64-v8a")
     list(APPEND EXTERNAL_LIBS ncnn)
     list(APPEND INCLUDE_DIR "/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/ncnn/include/ncnn")
-    #vulkan
-    link_directories("/home/cvte-vm/Downloads/unify_ndk-master/sources/third_party/vulkan/src/build-android/jniLibs/arm64-v8a")
-    list(APPEND EXTERNAL_LIBS 
-    VkLayer_core_validation 
-    VkLayer_khronos_validation
-    VkLayer_object_tracker
-    VkLayer_parameter_validation
-    VkLayer_threading
-    VkLayer_unique_objects)
+    # #vulkan
+    # link_directories("/home/cvte-vm/Downloads/unify_ndk-master/sources/third_party/vulkan/src/build-android/jniLibs/arm64-v8a")
+    # list(APPEND EXTERNAL_LIBS 
+    # VkLayer_core_validation 
+    # VkLayer_khronos_validation
+    # VkLayer_object_tracker
+    # VkLayer_parameter_validation
+    # VkLayer_threading
+    # VkLayer_unique_objects)
+    # list(APPEND INCLUDE_DIR "/home/cvte-vm/Downloads/unify_ndk-master/sources/third_party/vulkan/src/include/vulkan")
+    # #log
+    # link_directories("/home/cvte-vm/AndroidNDK/android-ndk-r21e-linux-x86_64/android-ndk-r21e/platforms/android-24/arch-arm64/usr/lib")
+    # list(APPEND EXTERNAL_LIBS log stdc++)
 
 
 endif()
@@ -139,7 +143,7 @@ add_executable(NCNN_superpoint ${EXEC} )
 #link library和可执行文件
 target_link_libraries( NCNN_superpoint
     ${EXTERNAL_LIBS}
-    -lpthread   #for multithread
+    # -lpthread   #for multithread
     -fopenmp
     -lstdc++
 )

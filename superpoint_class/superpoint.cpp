@@ -41,7 +41,7 @@ void Superpoint::extract_points(std::vector<std::vector<float>> &kps, const ncnn
     //sort kps by confidence in descending order
     int idx = 2;
     std::sort(kps.begin(), kps.end(), [idx](const std::vector<float>& a, const std::vector<float>& b) {
-        return a.at(idx) > b.at(idx);
+        return a[idx] > b[idx];
     });
     //print for debug
     // for (size_t i = 0; i < kps.size(); i++) {
@@ -148,36 +148,49 @@ void Superpoint::get_subpixel_coordinate(const ncnn::Mat &out1, const std::vecto
     }
 }
 
+extern MultiEntryTimer timer;
 void Superpoint::detect_and_compute(cv::Mat &img, std::vector<cv::Point2f> &final_kps, std::vector<std::vector<float>> &descriptor)
 {
     //preprocess image
+    timer.Start("preprocess");
     ncnn::Mat in;
     preprocess(img, in);
+    timer.StopAndCount("preprocess");
 
     //forward
-    ncnn::Extractor ex = superpoint.create_extractor();       //maybe make it static
-    // ex.set_num_threads(4);
+    timer.Start("forward");
+    ncnn::Extractor ex = superpoint.create_extractor();
+    ex.set_num_threads(4);
     ncnn::Mat out1;   //out1 for keypoints heatmap, of dim [1,1,240,320]
     ncnn::Mat out2;   //out2 for keypoints descriptor, of dim [1,256,240,320]
     ex.input("input.1", in);
     ex.extract("output.1", out1);
     ex.extract("output.2", out2);
+    timer.StopAndCount("forward");
 
     //extract keypoints
-    float threshold = 0.003;
+    timer.Start("extract_kps");
+    float threshold = 0.005;
     std::vector<std::vector<float>> kps;    //kps of dim [N,3], 3 for width, height, confidence
     extract_points(kps, out1, threshold);
+    timer.StopAndCount("extract_kps");
 
     //nms
+    timer.Start("nms");
     int nms_radius = 4;
     std::vector<std::vector<float>> nms_kps; //nms_kps of dim [N,2], 2 for width, height; because confidence is not needed anymore
     nms(kps, nms_kps, nms_radius);
+    timer.StopAndCount("nms");
 
     //extract descriptor
+    timer.Start("extract_des");
     extract_descriptor(out2, nms_kps, descriptor);    //descriptor of dim [N, 256], N for number of nmsed keypoints, 256 for descriptor length
+    timer.StopAndCount("extract_des");
 
     //find subpixel position of kps
+    timer.Start("subpixel");
     get_subpixel_coordinate(out1, nms_kps, final_kps);
+    timer.StopAndCount("subpixel");
 }
 
 

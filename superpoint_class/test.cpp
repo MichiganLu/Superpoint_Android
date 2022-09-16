@@ -1,5 +1,4 @@
 #include "superpoint.h"
-#include "time.h"
 
 void vec2DToMat(cv::Mat &desc, std::vector<std::vector<float>> &descriptor)
 {
@@ -20,19 +19,30 @@ void point2fToKeyPoint(std::vector<cv::KeyPoint> &kps, std::vector<cv::Point2f> 
     }
 }
 
+MultiEntryTimer timer;
 int main()
 {
-    MultiEntryTimer timer;
+    // MultiEntryTimer timer;
     //initialize model
+#ifdef USE_ANDROID
+    char *param = "../models/coco_pretrained.param";
+    char *bin = "../models/coco_pretrained.bin";
+#else
     char *param = "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/coco_pretrained.param";
     char *bin = "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/coco_pretrained.bin";
+#endif
     Superpoint model(param, bin);
 
     //input image
-    // const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
-    // const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
-    const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/1.ppm";
-    const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/5.ppm";
+#ifdef USE_ANDROID
+    const char* inputFile1 = "../img/1.ppm";
+    const char* inputFile2 = "../img/2.ppm";
+#else
+    const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
+    const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
+    // const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/1.ppm";
+    // const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/5.ppm";
+#endif
     std::ifstream inputList(inputFile1);
     if (!inputList) {
         std::cout << "Input list not valid. Please ensure that you have provided a valid input list for processing." << std::endl;
@@ -51,7 +61,7 @@ int main()
     //computation
     std::vector<cv::Point2f> final_kps1;
     std::vector<std::vector<float>> descriptor1;
-    for (int t=0; t<1; t++)
+    for (int t=0; t<100; t++)
     {
     timer.Start("processing");
     model.detect_and_compute(img1,final_kps1,descriptor1);
@@ -80,7 +90,7 @@ int main()
     std::vector< std::vector<cv::DMatch> > knn_matches;
     matcher->knnMatch( desc1, desc2, knn_matches, 2 );
     //-- Filter matches using the Lowe's ratio test
-    const float ratio_thresh = 0.80f;
+    const float ratio_thresh = 0.85f;
     std::vector<cv::DMatch> good_matches;
     for (size_t i = 0; i < knn_matches.size(); i++)
     {
@@ -95,7 +105,7 @@ int main()
                  cv::Scalar::all(-1), std::vector<char>(), cv::DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
     //-- Show detected matches
     cv::imshow("Good Matches", img_matches );
-    // cv::imwrite("dogman_0.005_0.80.jpg",img_matches);
+    // cv::imwrite("845_pool_0.005_0.85.jpg",img_matches);
     cv::waitKey(0);
     cv::destroyAllWindows;
 
