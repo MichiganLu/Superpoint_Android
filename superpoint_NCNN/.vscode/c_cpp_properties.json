@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN",
+                "/home/cvte-vm/NCNN/ncnn/build/src",
+                "/home/cvte-vm/NCNN/ncnn/src"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++14",
+            "intelliSenseMode": "linux-gcc-x64"
+        }
+    ],
+    "version": 4
+}
