@@ -21,12 +21,12 @@ void point2fToKeyPoint(std::vector<cv::KeyPoint> &kps, std::vector<cv::Point2f> 
 
 int main()
 {
-    MultiEntryTimer timer;
+    MultiEntryTimer timer2;
     //initialize model
     #ifdef USE_ANDROID
-    char *dlc_path = "../models/coco_manual_l2.dlc";
+    char *dlc_path = "../models/coco_manuall2_unshaped_prob_sim.dlc";
     #else
-    char *dlc_path = "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/coco_manual_l2.dlc";
+    char *dlc_path = "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/coco_manuall2_unshaped_prob_sim.dlc";
     #endif
     Superpoint model(dlc_path);
 
@@ -35,10 +35,10 @@ int main()
     const char* inputFile1 = "../img/1.ppm";
     const char* inputFile2 = "../img/2.ppm";
     #else
-    const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
-    const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
-    // const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/1.ppm";
-    // const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/5.ppm";
+    // const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
+    // const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
+    const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/1.ppm";
+    const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/5.ppm";
     #endif
     std::ifstream inputList(inputFile1);
     if (!inputList) {
@@ -59,17 +59,17 @@ int main()
     std::vector<cv::Point2f> final_kps2;
     std::vector<std::vector<float>> descriptor2;
 
-    for (int t=0; t<1; t++)
+    for (int t=0; t<10; t++)
     {
-    timer.Start("first_img_total_processing_time");
+    timer2.Start("first_img_total_processing_time");
     model.detect_and_compute(img1,final_kps1,descriptor1);
-    timer.StopAndCount("first_img_total_processing_time");
+    timer2.StopAndCount("first_img_total_processing_time");
     
-    timer.Start("second_img_total_processing_time");
+    timer2.Start("second_img_total_processing_time");
     model.detect_and_compute(img2,final_kps2,descriptor2);
-    timer.StopAndCount("second_img_total_processing_time");
+    timer2.StopAndCount("second_img_total_processing_time");
     }
-    timer.PrintMilliSeconds();
+    timer2.PrintMilliSeconds();
 
     //show match quality
     //convert descriptor to cv::Mat
@@ -89,7 +89,7 @@ int main()
     std::vector< std::vector<cv::DMatch> > knn_matches;
     matcher->knnMatch( desc1, desc2, knn_matches, 2 );
     //-- Filter matches using the Lowe's ratio test
-    const float ratio_thresh = 0.83f;
+    const float ratio_thresh = 0.80f;
     std::vector<cv::DMatch> good_matches;
     for (size_t i = 0; i < knn_matches.size(); i++)
     {
@@ -103,10 +103,10 @@ int main()
     drawMatches( img1rgb, kps1, img2rgb, kps2, good_matches, img_matches, cv::Scalar::all(-1),
                  cv::Scalar::all(-1), std::vector<char>(), cv::DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
     //-- Show detected matches
-    // cv::imwrite("DSP_pool_0.005_0.85.jpg",img_matches);
-    cv::imshow("Good Matches", img_matches );
-    cv::waitKey(0);
-    cv::destroyAllWindows;
+    cv::imwrite("DSP_pool_0.005_0.80.jpg",img_matches);
+    // cv::imshow("Good Matches", img_matches );
+    // cv::waitKey(0);
+    // cv::destroyAllWindows;
 
     // std::cout<<"mat is "<<desc1.at<float>(15,200)<<". vector is "<<descriptor1[15][200]<<std::endl;
 

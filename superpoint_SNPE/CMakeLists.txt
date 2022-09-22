@@ -116,8 +116,6 @@ add_executable(SNPE_superpoint ${EXEC} )
 #link library和可执行文件
 target_link_libraries( SNPE_superpoint
     ${EXTERNAL_LIBS}
-    -fopenmp
-    -lstdc++
 )
 target_link_libraries( SNPE_superpoint
 	${INTERNAL_LIBS}

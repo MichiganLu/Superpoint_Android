@@ -28,8 +28,8 @@ std::unique_ptr<zdl::SNPE::SNPE> setBuilderOptions(std::unique_ptr<zdl::DlContai
     }
     //set output layer
     zdl::DlSystem::StringList outputTensorList = {};
-    outputTensorList.append("Reshape_32");
-    outputTensorList.append("Div_42");
+    outputTensorList.append("Slice_29");
+    outputTensorList.append("Div_39");
     //set input layer
     zdl::DlSystem::TensorShapeMap inputShapeMap;
     inputShapeMap.add("input.1", {1,240,320,1});

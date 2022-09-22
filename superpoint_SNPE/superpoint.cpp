@@ -96,18 +96,20 @@ void Superpoint::preprocess(std::unique_ptr<zdl::SNPE::SNPE>& snpe, cv::Mat &img
     std::cout << "Finished processing inputs for current inference \n";
 }
 
-void Superpoint::extract_points(std::vector<std::vector<float>> &kps, const std::vector<float> outputHeatmap, const float threshold, const int &hm_height, const int &hm_width, const int &hm_channel)
+void Superpoint::extract_points(std::vector<std::vector<float>> &kps, const std::vector<float> outputHeatmap, const float threshold, const int &hm_height, const int &hm_width, const int &hm_channel, std::vector<std::vector<float>> &reshape_hm)
 {
     //each keypoint has three elements, hm_width, hm_height, confidence
+    int block_size = int(sqrt(hm_channel));
     for (int h=0; h<hm_height; h++)
     {
         for (int w=0; w<hm_width; w++)
         {
             for (int c=0; c<hm_channel; c++)
             {
+                reshape_hm[h*block_size+int(c/block_size)][w*block_size+(c%block_size)] = outputHeatmap[c+w*hm_channel+h*hm_channel*hm_width];
                 if (outputHeatmap[c+w*hm_channel+h*hm_channel*hm_width] > threshold)  
                 {
-                    std::vector<float> temp = {float(w), float(h), outputHeatmap[c+w*hm_channel+h*hm_channel*hm_width]};
+                    std::vector<float> temp = {float(w*block_size+(c%block_size)), float(h*block_size+int(c/block_size)), outputHeatmap[c+w*hm_channel+h*hm_channel*hm_width]};
                     kps.push_back(temp);
                 }
             }
@@ -192,7 +194,7 @@ void Superpoint::extract_descriptor(const std::vector<float> &outputDesc, const 
     }
 }
 
-void Superpoint::get_subpixel_coordinate(const std::vector<float> outputHeatmap, const std::vector<std::vector<float>> &nms_kps, std::vector<cv::Point2f> &final_kps, const int &hm_width)
+void Superpoint::get_subpixel_coordinate(const std::vector<std::vector<float>> &reshape_hm, const std::vector<std::vector<float>> &nms_kps, std::vector<cv::Point2f> &final_kps)
 {
     for (size_t i=0; i<nms_kps.size(); i++)
     {
@@ -207,15 +209,15 @@ void Superpoint::get_subpixel_coordinate(const std::vector<float> outputHeatmap,
         {
             for (int y=-2; y<=2; y++)   //I define y to be the height
             {
-                total_weight = total_weight + outputHeatmap[(width+x)+(height+y)*hm_width];
+                total_weight = total_weight + reshape_hm[height+y][width+x];
             }
         }
         for (int x=-2; x<=2; x++)    //I define x to be the width
         {
             for (int y=-2; y<=2; y++)   //I define y to be the height
             {
-                final_width = final_width + outputHeatmap[(width+x)+(height+y)*hm_width]/total_weight*(width+x);
-                final_height = final_height + outputHeatmap[(width+x)+(height+y)*hm_width]/total_weight*(height+y);
+                final_width = final_width + reshape_hm[height+y][width+x]/total_weight*(width+x);
+                final_height = final_height + reshape_hm[height+y][width+x]/total_weight*(height+y);
             }
         }
         cv::Point2f final_point(final_width*2, final_height*2);    //multiple 2 to scale back to 640,480
@@ -245,6 +247,7 @@ void Superpoint::detect_and_compute(cv::Mat &img, std::vector<cv::Point2f> &fina
 
     //extract two output tensors, that is, keypoint heatmap and descriptor
     // Get all output tensor names from the network
+    timer.Start("move output to std vector");
     zdl::DlSystem::StringList tensorNames = outputTensorMap.getTensorNames();
     // get heatmap tensor
     // get heatmap tensor from outputTensorMap by name
@@ -270,12 +273,16 @@ void Superpoint::detect_and_compute(cv::Mat &img, std::vector<cv::Point2f> &fina
     int desc_height = int(dims2[1]);
     int desc_width = int(dims2[2]);
     int desc_channel = int(dims2[3]);
+    timer.StopAndCount("move output to std vector");
 
     //extract keypoints
     timer.Start("extract_kps");
     float threshold = 0.005;
     std::vector<std::vector<float>> kps;    //kps of dim [N,3], 3 for width, height, confidence
-    extract_points(kps, outputHeatmap, threshold, hm_height, hm_width, hm_channel);
+    int rows = int(hm_height*sqrt(hm_channel));
+    int cols = int(hm_width*sqrt(hm_channel));
+    std::vector<std::vector<float>> reshape_hm(rows,std::vector<float>(cols,0));
+    extract_points(kps, outputHeatmap, threshold, hm_height, hm_width, hm_channel, reshape_hm);
     timer.StopAndCount("extract_kps");
 
     //nms
@@ -292,7 +299,7 @@ void Superpoint::detect_and_compute(cv::Mat &img, std::vector<cv::Point2f> &fina
 
     //find subpixel position of kps
     timer.Start("subpixel");
-    get_subpixel_coordinate(outputHeatmap, nms_kps, final_kps, hm_width);
+    get_subpixel_coordinate(reshape_hm, nms_kps, final_kps);
     timer.StopAndCount("subpixel");
     timer.PrintMilliSeconds();
 }

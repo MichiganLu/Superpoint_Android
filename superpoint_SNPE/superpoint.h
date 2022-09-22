@@ -72,9 +72,9 @@ class Superpoint
         Superpoint(char *dlc_path);
         ~Superpoint(){};
         void preprocess(std::unique_ptr<zdl::SNPE::SNPE>& snpe, cv::Mat &img, zdl::DlSystem::TensorMap &inputTensorMap);
-        void extract_points(std::vector<std::vector<float>> &kps, const std::vector<float> outputHeatmap, const float threshold, const int &hm_height, const int &hm_width, const int &hm_channel);
+        void extract_points(std::vector<std::vector<float>> &kps, const std::vector<float> outputHeatmap, const float threshold, const int &hm_height, const int &hm_width, const int &hm_channel, std::vector<std::vector<float>> &reshape_hm);
         void nms(std::vector<std::vector<float>> &kps, std::vector<std::vector<float>> &nms_kps, const int &nms_radius);
         void extract_descriptor(const std::vector<float> &outputDesc, const std::vector<std::vector<float>> &nms_kps, std::vector<std::vector<float>> &descriptor, const int &desc_height, const int &desc_width, const int &desc_channel);
-        void get_subpixel_coordinate(const std::vector<float> outputHeatmap, const std::vector<std::vector<float>> &nms_kps, std::vector<cv::Point2f> &final_kps, const int &hm_width);
+        void get_subpixel_coordinate(const std::vector<std::vector<float>> &reshape_hm, const std::vector<std::vector<float>> &nms_kps, std::vector<cv::Point2f> &final_kps);
         void detect_and_compute(cv::Mat &img, std::vector<cv::Point2f> &final_kps, std::vector<std::vector<float>> &descriptor);
 };
