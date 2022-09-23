@@ -27,8 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o.d"
   "CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o"
   "CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o.d"
-  "android/library/libsp_SNPE_lib.pdb"
-  "android/library/libsp_SNPE_lib.so"
+  "x64/library/libsp_SNPE_lib.pdb"
+  "x64/library/libsp_SNPE_lib.so"
 )
 
 # Per-language clean rules from dependency scanning.
