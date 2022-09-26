@@ -109,9 +109,9 @@ endif()
 
 #添加内部库
 add_library(sp_lib SHARED
-"/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/superpoint.cpp")
+"${CMAKE_CURRENT_SOURCE_DIR}/superpoint.cpp")
 list(APPEND INTERNAL_LIBS sp_lib)
-list(APPEND INCLUDE_DIR "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN")
+list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 
 
 #所有INCLUDE_DIR编写完成，现在include_directories
@@ -127,8 +127,8 @@ message( STATUS "Include dir = ${INCLUDE_DIR}"  )
 
 #创建executable并链接内部库和外部库
 set(EXEC  
-"/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/test.cpp"
-"/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/timer.cpp"
+"${CMAKE_CURRENT_SOURCE_DIR}/test.cpp"
+"${CMAKE_CURRENT_SOURCE_DIR}/timer.cpp"
 )
 add_executable(NCNN_superpoint ${EXEC} )
 
