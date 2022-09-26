@@ -32,8 +32,8 @@ int main()
 
     //input image
     #ifdef USE_ANDROID
-    const char* inputFile1 = "../img/3.ppm";
-    const char* inputFile2 = "../img/4.ppm";
+    const char* inputFile1 = "../img/1.ppm";
+    const char* inputFile2 = "../img/2.ppm";
     #else
     const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
     const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
@@ -59,6 +59,8 @@ int main()
     std::vector<cv::Point2f> final_kps2;
     std::vector<std::vector<float>> descriptor2;
 
+    //final_kps is of dimension N, N for number of keypoints
+    //descriptor is of dimension N*256, N for number of keypoints, 256 for descriptor length
     for (int t=0; t<1; t++)
     {
     timer2.Start("first_img_total_processing_time");
@@ -103,12 +105,10 @@ int main()
     drawMatches( img1rgb, kps1, img2rgb, kps2, good_matches, img_matches, cv::Scalar::all(-1),
                  cv::Scalar::all(-1), std::vector<char>(), cv::DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
     // -- Show detected matches
-    // cv::imwrite("DSP_dogman_0.008_0.82.jpg",img_matches);
-    cv::imshow("Good Matches", img_matches );
-    cv::waitKey(0);
-    cv::destroyAllWindows;
-
-    // std::cout<<"mat is "<<desc1.at<float>(15,200)<<". vector is "<<descriptor1[15][200]<<std::endl;
+    cv::imwrite("DSP_pool_0.008_0.82_noSTDassign.jpg",img_matches);
+    // cv::imshow("Good Matches", img_matches );
+    // cv::waitKey(0);
+    // cv::destroyAllWindows;
 
     return 0;
 

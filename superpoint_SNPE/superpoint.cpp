@@ -71,6 +71,7 @@ void Superpoint::preprocess(std::unique_ptr<zdl::SNPE::SNPE>& snpe, cv::Mat &img
 	}
     //convert cv mat to float vector
     std::vector<float> inputVec = img.reshape(1,1);
+    //print for debug
     // std::cout << "\nMin Element = "<< *std::min_element(inputVec.begin(), inputVec.end());
     // std::cout << "\nMax Element = "<< *std::max_element(inputVec.begin(), inputVec.end()) << std::endl;
 
@@ -96,8 +97,9 @@ void Superpoint::preprocess(std::unique_ptr<zdl::SNPE::SNPE>& snpe, cv::Mat &img
     std::cout << "Finished processing inputs for current inference \n";
 }
 
-void Superpoint::extract_points(std::vector<std::vector<float>> &kps, const std::vector<float> &outputHeatmap, const float threshold, const int &hm_height, const int &hm_width, const int &hm_channel, std::vector<std::vector<float>> &reshape_hm)
+void Superpoint::extract_points(std::vector<std::vector<float>> &kps, zdl::DlSystem::ITensor *outputHeatmap, const float threshold, const int &hm_height, const int &hm_width, const int &hm_channel, std::vector<std::vector<float>> &reshape_hm)
 {
+    zdl::DlSystem::ITensor::iterator outputHeatmap_ptr = outputHeatmap->begin();
     //each keypoint has three elements, hm_width, hm_height, confidence
     int block_size = int(sqrt(hm_channel));
     for (int h=0; h<hm_height; h++)
@@ -106,10 +108,10 @@ void Superpoint::extract_points(std::vector<std::vector<float>> &kps, const std:
         {
             for (int c=0; c<hm_channel; c++)
             {
-                reshape_hm[h*block_size+int(c/block_size)][w*block_size+(c%block_size)] = outputHeatmap[c+w*hm_channel+h*hm_channel*hm_width];
-                if (outputHeatmap[c+w*hm_channel+h*hm_channel*hm_width] > threshold)  
+                reshape_hm[h*block_size+int(c/block_size)][w*block_size+(c%block_size)] = outputHeatmap_ptr[c+w*hm_channel+h*hm_channel*hm_width];
+                if (outputHeatmap_ptr[c+w*hm_channel+h*hm_channel*hm_width] > threshold)  
                 {
-                    std::vector<float> temp = {float(w*block_size+(c%block_size)), float(h*block_size+int(c/block_size)), outputHeatmap[c+w*hm_channel+h*hm_channel*hm_width]};
+                    std::vector<float> temp = {float(w*block_size+(c%block_size)), float(h*block_size+int(c/block_size)), outputHeatmap_ptr[c+w*hm_channel+h*hm_channel*hm_width]};
                     kps.push_back(temp);
                 }
             }
@@ -179,9 +181,10 @@ void Superpoint::nms(std::vector<std::vector<float>> &kps, std::vector<std::vect
     // }
 }
 
-void Superpoint::extract_descriptor(const std::vector<float> &outputDesc, const std::vector<cv::Point2f> &final_kps, std::vector<std::vector<float>> &descriptor, const int &desc_height, const int &desc_width, const int &desc_channel, const int &hm_channel)
+void Superpoint::extract_descriptor(zdl::DlSystem::ITensor* outputDesc, const std::vector<cv::Point2f> &final_kps, std::vector<std::vector<float>> &descriptor, const int &desc_height, const int &desc_width, const int &desc_channel, const int &hm_channel)
 {
     int block_size = int(sqrt(hm_channel));
+    zdl::DlSystem::ITensor::iterator outputDesc_ptr = outputDesc->begin();
     for (size_t i=0; i<final_kps.size(); i++)
     {
         //extract points and perform bilinear interpolation
@@ -193,17 +196,17 @@ void Superpoint::extract_descriptor(const std::vector<float> &outputDesc, const 
         int h1 = int(h);    //correspond to y1
         int w2 = w1+1;      //correspond to x2
         int h2 = h1+1;      //correspond to y2
-        if (h >= 29)    //do this to avoid pointer pointing out of range
+        if (h >= desc_height-1)    //do this to avoid pointer pointing out of range
         {
             h1 = 28;
             h2 = 29;
         }
-        if (w >= 39)    //do this to avoid pointer pointing out of range
+        if (w >= desc_width-1)    //do this to avoid pointer pointing out of range
         {
             w1 = 38;
             w2 = 39;
         }
-        //debug
+        //print for debug
         // if (w1<0 || w2<0 || h1<0 || h2<0)
         // {
         //     std::cout<<"less"<<std::endl;
@@ -214,14 +217,14 @@ void Superpoint::extract_descriptor(const std::vector<float> &outputDesc, const 
         //     std::cout<<"w is "<<w<<std::endl;
         //     std::cout<<"h is "<<h<<std::endl;
         // }
-        //debug
+
         for (int c=0; c<256; c++)    //iterate over channel to extract descriptor, 256 is the channel length
         {
             //bilinear interpolation
-            float q11 = outputDesc.at(c+w1*desc_channel+h1*desc_width*desc_channel);
-            float q12 = outputDesc.at(c+w1*desc_channel+h2*desc_width*desc_channel);
-            float q21 = outputDesc.at(c+w2*desc_channel+h1*desc_width*desc_channel);
-            float q22 = outputDesc.at(c+w2*desc_channel+h2*desc_width*desc_channel);
+            float q11 = outputDesc_ptr[c+w1*desc_channel+h1*desc_width*desc_channel];
+            float q12 = outputDesc_ptr[c+w1*desc_channel+h2*desc_width*desc_channel];
+            float q21 = outputDesc_ptr[c+w2*desc_channel+h1*desc_width*desc_channel];
+            float q22 = outputDesc_ptr[c+w2*desc_channel+h2*desc_width*desc_channel];
             temp_descriptor[c] = ((w2-w)*(h2-h))/((w2-w1)*(h2-h1))*q11 + ((w-w1)*(h2-h))/((w2-w1)*(h2-h1))*q21 + ((w2-w)*(h-h1))/((w2-w1)*(h2-h1))*q12 + ((w-w1)*(h-h1))/((w2-w1)*(h2-h1))*q22;
         }
         descriptor.push_back(temp_descriptor);
@@ -285,25 +288,19 @@ void Superpoint::detect_and_compute(cv::Mat &img, std::vector<cv::Point2f> &fina
     zdl::DlSystem::StringList tensorNames = outputTensorMap.getTensorNames();
     // get heatmap tensor
     // get heatmap tensor from outputTensorMap by name
-    auto tensorPtr1 = outputTensorMap.getTensor(tensorNames.at(1));
-    //create output vector to load output tensor
-    std::vector<float> outputHeatmap;
-    outputHeatmap.assign(tensorPtr1->begin(),tensorPtr1->end());
+    auto outputHeatmap = outputTensorMap.getTensor(tensorNames.at(1));
     // get heatmap tensor dimension
-    zdl::DlSystem::TensorShape tensorShape1 = tensorPtr1->getShape();
-    const size_t* dims1 = tensorShape1.getDimensions(); //dims[0] batch, dims[1] width, dims[2] height, dims[3] channel
+    zdl::DlSystem::TensorShape tensorShape1 = outputHeatmap->getShape();
+    const size_t* dims1 = tensorShape1.getDimensions(); //dims[0] batch, dims[1] channel, dims[2] height, dims[3] width
     int hm_height = int(dims1[2]);
     int hm_width = int(dims1[3]);
     int hm_channel = int(dims1[1]);
     // get descriptor tensor
     // get descriptor tensor from outputTensorMap by name
-    auto tensorPtr2 = outputTensorMap.getTensor(tensorNames.at(0));
-    //create output vector to load output tensor
-    std::vector<float> outputDesc;
-    outputDesc.assign(tensorPtr2->begin(),tensorPtr2->end());
+    auto outputDesc = outputTensorMap.getTensor(tensorNames.at(0));
     // get descriptor tensor dimension
-    zdl::DlSystem::TensorShape tensorShape2 = tensorPtr2->getShape();
-    const size_t* dims2 = tensorShape2.getDimensions(); //dims[0] batch, dims[1] width, dims[2] height, dims[3] channel
+    zdl::DlSystem::TensorShape tensorShape2 = outputDesc->getShape();
+    const size_t* dims2 = tensorShape2.getDimensions(); //dims[0] batch, dims[1] height, dims[2] width, dims[3] channel
     int desc_height = int(dims2[1]);
     int desc_width = int(dims2[2]);
     int desc_channel = int(dims2[3]);

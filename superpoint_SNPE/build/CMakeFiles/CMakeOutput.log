@@ -1,89 +1,44 @@
-The system is: Linux - 5.4.0-124-generic - x86_64
-Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
-Compiler: /usr/bin/cc 
-Build flags: 
-Id flags:  
-
-The output was:
-0
-
-
-Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
-
-The C compiler identification is GNU, found in "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/3.22.1/CompilerIdC/a.out"
-
-Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
-Compiler: /usr/bin/c++ 
-Build flags: 
-Id flags:  
-
-The output was:
-0
-
-
-Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
-
-The CXX compiler identification is GNU, found in "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/3.22.1/CompilerIdCXX/a.out"
-
+The target system is: Android - 1 - aarch64
+The host system is: Linux - 5.4.0-124-generic - x86_64
 Detecting C compiler ABI info compiled with the following output:
 Change Dir: /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_83477/fast && /usr/bin/make  -f CMakeFiles/cmTC_83477.dir/build.make CMakeFiles/cmTC_83477.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c79d/fast && /usr/bin/make  -f CMakeFiles/cmTC_4c79d.dir/build.make CMakeFiles/cmTC_4c79d.dir/build
 make[1]: Entering directory '/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp'
-Building C object CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o
-/usr/bin/cc   -v -o CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o -c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCCompilerABI.c
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Building C object CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o
+/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+Android (6454773 based on r365631c2) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489587874b2a325e7a516b99d838599c6f) (based on LLVM 9.0.8svn)
+Target: aarch64-none-linux-android24
 Thread model: posix
-gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccZgK8m0.s
-GNU C11 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)
-	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+InstalledDir: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin
+Found candidate GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda-11.4, version 7.0
+ "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -coverage-notes-file /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.gcno -resource-dir /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8 -dependency-file CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o.d -sys-header-deps -MT CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -o CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -x c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCCompilerABI.c
+clang -cc1 version 9.0.8 based upon LLVM 9.0.8svn default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/lib/gcc/x86_64-linux-gnu/7/include
- /usr/local/include
- /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
- /usr/include/x86_64-linux-gnu
- /usr/include
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
 End of search list.
-GNU C11 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)
-	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: b62ed4a2880cd4159476ea8293b72fa8
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o /tmp/ccZgK8m0.s
-GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64'
-Linking C executable cmTC_83477
-/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83477.dir/link.txt --verbose=1
-/usr/bin/cc  -v CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o -o cmTC_83477 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/cc
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Linking C executable cmTC_4c79d
+/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c79d.dir/link.txt --verbose=1
+/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections  -v CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -o cmTC_4c79d 
+Android (6454773 based on r365631c2) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489587874b2a325e7a516b99d838599c6f) (based on LLVM 9.0.8svn)
+Target: aarch64-none-linux-android24
 Thread model: posix
-gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83477' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrp1Ss2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_83477 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83477' '-mtune=generic' '-march=x86-64'
+InstalledDir: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin
+Found candidate GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda-11.4, version 7.0
+ "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z noexecstack -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_4c79d /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
 make[1]: Leaving directory '/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp'
 
 
@@ -91,207 +46,159 @@ make[1]: Leaving directory '/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoin
 Parsed C implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/lib/gcc/x86_64-linux-gnu/7/include]
-    add: [/usr/local/include]
-    add: [/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed]
-    add: [/usr/include/x86_64-linux-gnu]
-    add: [/usr/include]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
   end of search list found
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/7/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/7/include]
-  collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed] ==> [/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-  collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/lib/gcc/x86_64-linux-gnu/7/include;/usr/local/include;/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  implicit include dirs: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
 
 
 Parsed C implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_83477/fast && /usr/bin/make  -f CMakeFiles/cmTC_83477.dir/build.make CMakeFiles/cmTC_83477.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_4c79d/fast && /usr/bin/make  -f CMakeFiles/cmTC_4c79d.dir/build.make CMakeFiles/cmTC_4c79d.dir/build]
   ignore line: [make[1]: Entering directory '/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building C object CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o]
-  ignore line: [/usr/bin/cc   -v -o CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o -c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Building C object CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o]
+  ignore line: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -fPIE   -v -MD -MT CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -MF CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o.d -o CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [Android (6454773 based on r365631c2) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489587874b2a325e7a516b99d838599c6f) (based on LLVM 9.0.8svn)]
+  ignore line: [Target: aarch64-none-linux-android24]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/cc1 -quiet -v -imultiarch x86_64-linux-gnu /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCCompilerABI.c -quiet -dumpbase CMakeCCompilerABI.c -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccZgK8m0.s]
-  ignore line: [GNU C11 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version isl-0.19-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"]
+  ignore line: [InstalledDir: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [Found CUDA installation: /usr/local/cuda-11.4  version 7.0]
+  ignore line: [ "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCCompilerABI.c -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -coverage-notes-file /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.gcno -resource-dir /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8 -dependency-file CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o.d -sys-header-deps -MT CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdebug-compilation-dir /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fno-signed-char -fobjc-runtime=gcc -fdiagnostics-show-option -o CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -x c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCCompilerABI.c]
+  ignore line: [clang -cc1 version 9.0.8 based upon LLVM 9.0.8svn default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/include]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
-  ignore line: [ /usr/include]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C11 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version isl-0.19-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: b62ed4a2880cd4159476ea8293b72fa8]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o /tmp/ccZgK8m0.s]
-  ignore line: [GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o' '-c' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking C executable cmTC_83477]
-  ignore line: [/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_83477.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/cc  -v CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o -o cmTC_83477 ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/cc]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Linking C executable cmTC_4c79d]
+  ignore line: [/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_4c79d.dir/link.txt --verbose=1]
+  ignore line: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat   -Wl --exclude-libs libgcc.a -Wl --exclude-libs libgcc_real.a -Wl --exclude-libs libatomic.a -static-libstdc++ -Wl --build-id -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments -Wl --gc-sections  -v CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -o cmTC_4c79d ]
+  ignore line: [Android (6454773 based on r365631c2) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489587874b2a325e7a516b99d838599c6f) (based on LLVM 9.0.8svn)]
+  ignore line: [Target: aarch64-none-linux-android24]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_83477' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/ccrp1Ss2.res -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lgcc_s --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_83477 /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o -lgcc --push-state --as-needed -lgcc_s --pop-state -lc -lgcc --push-state --as-needed -lgcc_s --pop-state /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/ccrp1Ss2.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+  ignore line: [InstalledDir: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [Found CUDA installation: /usr/local/cuda-11.4  version 7.0]
+  link line: [ "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z noexecstack -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_4c79d /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o -lgcc -ldl -lc -lgcc -ldl /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+    arg [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-EL] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [--warn-shared-textrel] ==> ignore
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
+    arg [-zmax-page-size=4096] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_83477] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_83477.dir/CMakeCCompilerABI.c.o] ==> ignore
+    arg [cmTC_4c79d] ==> ignore
+    arg [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> obj [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc.a] ==> ignore
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc_real.a] ==> ignore
+    arg [--exclude-libs] ==> ignore
+    arg [libatomic.a] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [CMakeFiles/cmTC_4c79d.dir/CMakeCCompilerABI.c.o] ==> ignore
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
+    arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
     arg [-lgcc] ==> lib [gcc]
-    arg [--push-state] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-lgcc_s] ==> lib [gcc_s]
-    arg [--pop-state] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
-  implicit libs: [gcc;gcc_s;c;gcc;gcc_s]
-  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+    arg [-ldl] ==> lib [dl]
+    arg [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> obj [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/lib64]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/lib]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit libs: [gcc;dl;c;gcc;dl]
+  implicit objs: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+  implicit dirs: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/lib64;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/lib;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
   implicit fwks: []
 
 
 Detecting CXX compiler ABI info compiled with the following output:
 Change Dir: /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp
 
-Run Build Command(s):/usr/bin/make -f Makefile cmTC_0d0ff/fast && /usr/bin/make  -f CMakeFiles/cmTC_0d0ff.dir/build.make CMakeFiles/cmTC_0d0ff.dir/build
+Run Build Command(s):/usr/bin/make -f Makefile cmTC_f3fc7/fast && /usr/bin/make  -f CMakeFiles/cmTC_f3fc7.dir/build.make CMakeFiles/cmTC_f3fc7.dir/build
 make[1]: Entering directory '/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp'
-Building CXX object CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o
-/usr/bin/c++   -v -o CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o -c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Building CXX object CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o
+/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+Android (6454773 based on r365631c2) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489587874b2a325e7a516b99d838599c6f) (based on LLVM 9.0.8svn)
+Target: aarch64-none-linux-android24
 Thread model: posix
-gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccKqFB0a.s
-GNU C++14 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)
-	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"
-ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"
-ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"
+InstalledDir: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin
+Found candidate GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda-11.4, version 7.0
+ "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -coverage-notes-file /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8 -dependency-file CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o.d -sys-header-deps -MT CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp
+clang -cc1 version 9.0.8 based upon LLVM 9.0.8svn default target x86_64-unknown-linux-gnu
+ignoring nonexistent directory "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"
 #include "..." search starts here:
 #include <...> search starts here:
- /usr/include/c++/7
- /usr/include/x86_64-linux-gnu/c++/7
- /usr/include/c++/7/backward
- /usr/lib/gcc/x86_64-linux-gnu/7/include
- /usr/local/include
- /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed
- /usr/include/x86_64-linux-gnu
- /usr/include
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android
+ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include
 End of search list.
-GNU C++14 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)
-	compiled by GNU C version 7.5.0, GMP version 6.1.2, MPFR version 4.0.1, MPC version 1.1.0, isl version isl-0.19-GMP
-
-GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072
-Compiler executable checksum: 3eb3dc290cd5714c3e1c3ae751116f07
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- as -v --64 -o CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccKqFB0a.s
-GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
-Linking CXX executable cmTC_0d0ff
-/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d0ff.dir/link.txt --verbose=1
-/usr/bin/c++  -v CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0d0ff 
-Using built-in specs.
-COLLECT_GCC=/usr/bin/c++
-COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper
-OFFLOAD_TARGET_NAMES=nvptx-none
-OFFLOAD_TARGET_DEFAULT=1
-Target: x86_64-linux-gnu
-Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c,ada,c++,go,brig,d,fortran,objc,obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32,m64,mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu
+Linking CXX executable cmTC_f3fc7
+/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3fc7.dir/link.txt --verbose=1
+/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -Wl,--exclude-libs,libgcc.a -Wl,--exclude-libs,libgcc_real.a -Wl,--exclude-libs,libatomic.a -static-libstdc++ -Wl,--build-id -Wl,--fatal-warnings -Wl,--no-undefined -Qunused-arguments -Wl,--gc-sections  -v CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f3fc7 
+Android (6454773 based on r365631c2) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489587874b2a325e7a516b99d838599c6f) (based on LLVM 9.0.8svn)
+Target: aarch64-none-linux-android24
 Thread model: posix
-gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) 
-COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/
-LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0d0ff' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
- /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2AkuMd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0d0ff /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o
-COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0d0ff' '-shared-libgcc' '-mtune=generic' '-march=x86-64'
+InstalledDir: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin
+Found candidate GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Selected GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x
+Candidate multilib: .;@m64
+Selected multilib: .;@m64
+Found CUDA installation: /usr/local/cuda-11.4, version 7.0
+ "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z noexecstack -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_f3fc7 /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o
 make[1]: Leaving directory '/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp'
 
 
@@ -299,147 +206,123 @@ make[1]: Leaving directory '/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoin
 Parsed CXX implicit include dir info from above output: rv=done
   found start of include info
   found start of implicit include info
-    add: [/usr/include/c++/7]
-    add: [/usr/include/x86_64-linux-gnu/c++/7]
-    add: [/usr/include/c++/7/backward]
-    add: [/usr/lib/gcc/x86_64-linux-gnu/7/include]
-    add: [/usr/local/include]
-    add: [/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed]
-    add: [/usr/include/x86_64-linux-gnu]
-    add: [/usr/include]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+    add: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
   end of search list found
-  collapse include dir [/usr/include/c++/7] ==> [/usr/include/c++/7]
-  collapse include dir [/usr/include/x86_64-linux-gnu/c++/7] ==> [/usr/include/x86_64-linux-gnu/c++/7]
-  collapse include dir [/usr/include/c++/7/backward] ==> [/usr/include/c++/7/backward]
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/7/include] ==> [/usr/lib/gcc/x86_64-linux-gnu/7/include]
-  collapse include dir [/usr/local/include] ==> [/usr/local/include]
-  collapse include dir [/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed] ==> [/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed]
-  collapse include dir [/usr/include/x86_64-linux-gnu] ==> [/usr/include/x86_64-linux-gnu]
-  collapse include dir [/usr/include] ==> [/usr/include]
-  implicit include dirs: [/usr/include/c++/7;/usr/include/x86_64-linux-gnu/c++/7;/usr/include/c++/7/backward;/usr/lib/gcc/x86_64-linux-gnu/7/include;/usr/local/include;/usr/lib/gcc/x86_64-linux-gnu/7/include-fixed;/usr/include/x86_64-linux-gnu;/usr/include]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+  collapse include dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
+  implicit include dirs: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
 
 
 Parsed CXX implicit link information from above output:
-  link line regex: [^( *|.*[/\])(ld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
+  link line regex: [^( *|.*[/\])(ld\.lld|CMAKE_LINK_STARTFILE-NOTFOUND|([^/\]+-)?ld|collect2)[^/\]*( |$)]
   ignore line: [Change Dir: /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp]
   ignore line: []
-  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_0d0ff/fast && /usr/bin/make  -f CMakeFiles/cmTC_0d0ff.dir/build.make CMakeFiles/cmTC_0d0ff.dir/build]
+  ignore line: [Run Build Command(s):/usr/bin/make -f Makefile cmTC_f3fc7/fast && /usr/bin/make  -f CMakeFiles/cmTC_f3fc7.dir/build.make CMakeFiles/cmTC_f3fc7.dir/build]
   ignore line: [make[1]: Entering directory '/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp']
-  ignore line: [Building CXX object CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o]
-  ignore line: [/usr/bin/c++   -v -o CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o -c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Building CXX object CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o]
+  ignore line: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -fPIE   -v -MD -MT CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -MF CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o.d -o CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -c /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [Android (6454773 based on r365631c2) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489587874b2a325e7a516b99d838599c6f) (based on LLVM 9.0.8svn)]
+  ignore line: [Target: aarch64-none-linux-android24]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/cc1plus -quiet -v -imultiarch x86_64-linux-gnu -D_GNU_SOURCE /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp -quiet -dumpbase CMakeCXXCompilerABI.cpp -mtune=generic -march=x86-64 -auxbase-strip CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o -version -fstack-protector-strong -Wformat -Wformat-security -o /tmp/ccKqFB0a.s]
-  ignore line: [GNU C++14 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version isl-0.19-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [ignoring duplicate directory "/usr/include/x86_64-linux-gnu/c++/7"]
-  ignore line: [ignoring nonexistent directory "/usr/local/include/x86_64-linux-gnu"]
-  ignore line: [ignoring nonexistent directory "/usr/lib/gcc/x86_64-linux-gnu/7/../../../../x86_64-linux-gnu/include"]
+  ignore line: [InstalledDir: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [Found CUDA installation: /usr/local/cuda-11.4  version 7.0]
+  ignore line: [ "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++" -cc1 -triple aarch64-none-linux-android24 -emit-obj -mrelax-all -mnoexecstack -disable-free -disable-llvm-verifier -discard-value-names -main-file-name CMakeCXXCompilerABI.cpp -mrelocation-model pic -pic-level 2 -pic-is-pie -mthread-model posix -mdisable-fp-elim -masm-verbose -mconstructor-aliases -munwind-tables -fuse-init-array -target-cpu generic -target-feature +neon -target-abi aapcs -mllvm -aarch64-fix-cortex-a53-835769=1 -fallow-half-arguments-and-returns -dwarf-column-info -debug-info-kind=limited -dwarf-version=4 -debugger-tuning=gdb -v -ffunction-sections -fdata-sections -coverage-notes-file /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp/CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.gcno -resource-dir /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8 -dependency-file CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o.d -sys-header-deps -MT CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -D ANDROID -D _FORTIFY_SOURCE=2 -isysroot /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1 -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include -internal-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include -internal-externc-isystem /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include -Wformat -fdeprecated-macro -fdebug-compilation-dir /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles/CMakeTmp -ferror-limit 19 -fmessage-length 0 -stack-protector 2 -fno-signed-char -fobjc-runtime=gcc -fcxx-exceptions -fexceptions -fdiagnostics-show-option -o CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -x c++ /home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/share/cmake-3.22/Modules/CMakeCXXCompilerABI.cpp]
+  ignore line: [clang -cc1 version 9.0.8 based upon LLVM 9.0.8svn default target x86_64-unknown-linux-gnu]
+  ignore line: [ignoring nonexistent directory "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/include"]
   ignore line: [#include "..." search starts here:]
   ignore line: [#include <...> search starts here:]
-  ignore line: [ /usr/include/c++/7]
-  ignore line: [ /usr/include/x86_64-linux-gnu/c++/7]
-  ignore line: [ /usr/include/c++/7/backward]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/include]
-  ignore line: [ /usr/local/include]
-  ignore line: [ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed]
-  ignore line: [ /usr/include/x86_64-linux-gnu]
-  ignore line: [ /usr/include]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android]
+  ignore line: [ /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include]
   ignore line: [End of search list.]
-  ignore line: [GNU C++14 (Ubuntu 7.5.0-3ubuntu1~18.04) version 7.5.0 (x86_64-linux-gnu)]
-  ignore line: [	compiled by GNU C version 7.5.0  GMP version 6.1.2  MPFR version 4.0.1  MPC version 1.1.0  isl version isl-0.19-GMP]
-  ignore line: []
-  ignore line: [GGC heuristics: --param ggc-min-expand=100 --param ggc-min-heapsize=131072]
-  ignore line: [Compiler executable checksum: 3eb3dc290cd5714c3e1c3ae751116f07]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [ as -v --64 -o CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o /tmp/ccKqFB0a.s]
-  ignore line: [GNU assembler version 2.30 (x86_64-linux-gnu) using BFD version (GNU Binutils for Ubuntu) 2.30]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o' '-c' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  ignore line: [Linking CXX executable cmTC_0d0ff]
-  ignore line: [/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_0d0ff.dir/link.txt --verbose=1]
-  ignore line: [/usr/bin/c++  -v CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_0d0ff ]
-  ignore line: [Using built-in specs.]
-  ignore line: [COLLECT_GCC=/usr/bin/c++]
-  ignore line: [COLLECT_LTO_WRAPPER=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper]
-  ignore line: [OFFLOAD_TARGET_NAMES=nvptx-none]
-  ignore line: [OFFLOAD_TARGET_DEFAULT=1]
-  ignore line: [Target: x86_64-linux-gnu]
-  ignore line: [Configured with: ../src/configure -v --with-pkgversion='Ubuntu 7.5.0-3ubuntu1~18.04' --with-bugurl=file:///usr/share/doc/gcc-7/README.Bugs --enable-languages=c ada c++ go brig d fortran objc obj-c++ --prefix=/usr --with-gcc-major-version-only --program-suffix=-7 --program-prefix=x86_64-linux-gnu- --enable-shared --enable-linker-build-id --libexecdir=/usr/lib --without-included-gettext --enable-threads=posix --libdir=/usr/lib --enable-nls --enable-bootstrap --enable-clocale=gnu --enable-libstdcxx-debug --enable-libstdcxx-time=yes --with-default-libstdcxx-abi=new --enable-gnu-unique-object --disable-vtable-verify --enable-libmpx --enable-plugin --enable-default-pie --with-system-zlib --with-target-system-zlib --enable-objc-gc=auto --enable-multiarch --disable-werror --with-arch-32=i686 --with-abi=m64 --with-multilib-list=m32 m64 mx32 --enable-multilib --with-tune=generic --enable-offload-targets=nvptx-none --without-cuda-driver --enable-checking=release --build=x86_64-linux-gnu --host=x86_64-linux-gnu --target=x86_64-linux-gnu]
+  ignore line: [Linking CXX executable cmTC_f3fc7]
+  ignore line: [/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cmake -E cmake_link_script CMakeFiles/cmTC_f3fc7.dir/link.txt --verbose=1]
+  ignore line: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -D_FORTIFY_SOURCE=2 -Wformat    -Wl --exclude-libs libgcc.a -Wl --exclude-libs libgcc_real.a -Wl --exclude-libs libatomic.a -static-libstdc++ -Wl --build-id -Wl --fatal-warnings -Wl --no-undefined -Qunused-arguments -Wl --gc-sections  -v CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -o cmTC_f3fc7 ]
+  ignore line: [Android (6454773 based on r365631c2) clang version 9.0.8 (https://android.googlesource.com/toolchain/llvm-project 98c855489587874b2a325e7a516b99d838599c6f) (based on LLVM 9.0.8svn)]
+  ignore line: [Target: aarch64-none-linux-android24]
   ignore line: [Thread model: posix]
-  ignore line: [gcc version 7.5.0 (Ubuntu 7.5.0-3ubuntu1~18.04) ]
-  ignore line: [COMPILER_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/]
-  ignore line: [LIBRARY_PATH=/usr/lib/gcc/x86_64-linux-gnu/7/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib/:/lib/x86_64-linux-gnu/:/lib/../lib/:/usr/lib/x86_64-linux-gnu/:/usr/lib/../lib/:/usr/lib/gcc/x86_64-linux-gnu/7/../../../:/lib/:/usr/lib/]
-  ignore line: [COLLECT_GCC_OPTIONS='-v' '-o' 'cmTC_0d0ff' '-shared-libgcc' '-mtune=generic' '-march=x86-64']
-  link line: [ /usr/lib/gcc/x86_64-linux-gnu/7/collect2 -plugin /usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so -plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper -plugin-opt=-fresolution=/tmp/cc2AkuMd.res -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc -plugin-opt=-pass-through=-lc -plugin-opt=-pass-through=-lgcc_s -plugin-opt=-pass-through=-lgcc --build-id --eh-frame-hdr -m elf_x86_64 --hash-style=gnu --as-needed -dynamic-linker /lib64/ld-linux-x86-64.so.2 -pie -z now -z relro -o cmTC_0d0ff /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o /usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o -L/usr/lib/gcc/x86_64-linux-gnu/7 -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu -L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib -L/lib/x86_64-linux-gnu -L/lib/../lib -L/usr/lib/x86_64-linux-gnu -L/usr/lib/../lib -L/usr/lib/gcc/x86_64-linux-gnu/7/../../.. CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o -lstdc++ -lm -lgcc_s -lgcc -lc -lgcc_s -lgcc /usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o /usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/collect2] ==> ignore
-    arg [-plugin] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/liblto_plugin.so] ==> ignore
-    arg [-plugin-opt=/usr/lib/gcc/x86_64-linux-gnu/7/lto-wrapper] ==> ignore
-    arg [-plugin-opt=-fresolution=/tmp/cc2AkuMd.res] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lc] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc_s] ==> ignore
-    arg [-plugin-opt=-pass-through=-lgcc] ==> ignore
-    arg [--build-id] ==> ignore
-    arg [--eh-frame-hdr] ==> ignore
-    arg [-m] ==> ignore
-    arg [elf_x86_64] ==> ignore
-    arg [--hash-style=gnu] ==> ignore
-    arg [--as-needed] ==> ignore
-    arg [-dynamic-linker] ==> ignore
-    arg [/lib64/ld-linux-x86-64.so.2] ==> ignore
+  ignore line: [InstalledDir: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin]
+  ignore line: [Found candidate GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Selected GCC installation: /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  ignore line: [Candidate multilib: .]
+  ignore line: [@m64]
+  ignore line: [Selected multilib: .]
+  ignore line: [@m64]
+  ignore line: [Found CUDA installation: /usr/local/cuda-11.4  version 7.0]
+  link line: [ "/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld" --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot -pie -z noexecstack -EL --fix-cortex-a53-843419 --warn-shared-textrel -z now -z relro -z max-page-size=4096 --hash-style=gnu --enable-new-dtags --eh-frame-hdr -m aarch64linux -dynamic-linker /system/bin/linker64 -o cmTC_f3fc7 /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24 -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib -L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib --exclude-libs libgcc.a --exclude-libs libgcc_real.a --exclude-libs libatomic.a --build-id --fatal-warnings --no-undefined --gc-sections CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o -Bstatic -lc++ -Bdynamic -lm -lgcc -ldl -lc -lgcc -ldl /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+    arg [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/bin/ld] ==> ignore
+    arg [--sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot] ==> ignore
     arg [-pie] ==> ignore
+    arg [-znoexecstack] ==> ignore
+    arg [-EL] ==> ignore
+    arg [--fix-cortex-a53-843419] ==> ignore
+    arg [--warn-shared-textrel] ==> ignore
     arg [-znow] ==> ignore
     arg [-zrelro] ==> ignore
+    arg [-zmax-page-size=4096] ==> ignore
+    arg [--hash-style=gnu] ==> ignore
+    arg [--enable-new-dtags] ==> ignore
+    arg [--eh-frame-hdr] ==> ignore
+    arg [-m] ==> ignore
+    arg [aarch64linux] ==> ignore
+    arg [-dynamic-linker] ==> ignore
+    arg [/system/bin/linker64] ==> ignore
     arg [-o] ==> ignore
-    arg [cmTC_0d0ff] ==> ignore
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib]
-    arg [-L/lib/x86_64-linux-gnu] ==> dir [/lib/x86_64-linux-gnu]
-    arg [-L/lib/../lib] ==> dir [/lib/../lib]
-    arg [-L/usr/lib/x86_64-linux-gnu] ==> dir [/usr/lib/x86_64-linux-gnu]
-    arg [-L/usr/lib/../lib] ==> dir [/usr/lib/../lib]
-    arg [-L/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..]
-    arg [CMakeFiles/cmTC_0d0ff.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
-    arg [-lstdc++] ==> lib [stdc++]
+    arg [cmTC_f3fc7] ==> ignore
+    arg [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o] ==> obj [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib]
+    arg [-L/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc.a] ==> ignore
+    arg [--exclude-libs] ==> ignore
+    arg [libgcc_real.a] ==> ignore
+    arg [--exclude-libs] ==> ignore
+    arg [libatomic.a] ==> ignore
+    arg [--build-id] ==> ignore
+    arg [--fatal-warnings] ==> ignore
+    arg [--no-undefined] ==> ignore
+    arg [--gc-sections] ==> ignore
+    arg [CMakeFiles/cmTC_f3fc7.dir/CMakeCXXCompilerABI.cpp.o] ==> ignore
+    arg [-Bstatic] ==> search static
+    arg [-lc++] ==> lib [c++]
+    arg [-Bdynamic] ==> search dynamic
     arg [-lm] ==> lib [m]
-    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
+    arg [-ldl] ==> lib [dl]
     arg [-lc] ==> lib [c]
-    arg [-lgcc_s] ==> lib [gcc_s]
     arg [-lgcc] ==> lib [gcc]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o]
-    arg [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/Scrt1.o] ==> [/usr/lib/x86_64-linux-gnu/Scrt1.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crti.o] ==> [/usr/lib/x86_64-linux-gnu/crti.o]
-  collapse obj [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu/crtn.o] ==> [/usr/lib/x86_64-linux-gnu/crtn.o]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7] ==> [/usr/lib/gcc/x86_64-linux-gnu/7]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../../../lib] ==> [/usr/lib]
-  collapse library dir [/lib/x86_64-linux-gnu] ==> [/lib/x86_64-linux-gnu]
-  collapse library dir [/lib/../lib] ==> [/lib]
-  collapse library dir [/usr/lib/x86_64-linux-gnu] ==> [/usr/lib/x86_64-linux-gnu]
-  collapse library dir [/usr/lib/../lib] ==> [/usr/lib]
-  collapse library dir [/usr/lib/gcc/x86_64-linux-gnu/7/../../..] ==> [/usr/lib]
-  implicit libs: [stdc++;m;gcc_s;gcc;c;gcc_s;gcc]
-  implicit objs: [/usr/lib/x86_64-linux-gnu/Scrt1.o;/usr/lib/x86_64-linux-gnu/crti.o;/usr/lib/gcc/x86_64-linux-gnu/7/crtbeginS.o;/usr/lib/gcc/x86_64-linux-gnu/7/crtendS.o;/usr/lib/x86_64-linux-gnu/crtn.o]
-  implicit dirs: [/usr/lib/gcc/x86_64-linux-gnu/7;/usr/lib/x86_64-linux-gnu;/usr/lib;/lib/x86_64-linux-gnu;/lib]
+    arg [-ldl] ==> lib [dl]
+    arg [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o] ==> obj [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib/../lib64] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/lib64]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x/../../../../aarch64-linux-android/lib] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/lib]
+  collapse library dir [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib] ==> [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
+  implicit libs: [c++;m;gcc;dl;c;gcc;dl]
+  implicit objs: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtbegin_dynamic.o;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24/crtend_android.o]
+  implicit dirs: [/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/lib/linux/aarch64;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib/gcc/aarch64-linux-android/4.9.x;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/lib64;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android/24;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib/aarch64-linux-android;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/aarch64-linux-android/lib;/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/lib]
   implicit fwks: []
 
 
