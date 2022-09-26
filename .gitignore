@@ -7,5 +7,10 @@
 /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/test_image_x64
 /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/test_img_845/*
 /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/test_img_pc/*
-/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/test_result.ods
-
+test_result.ods
+coco_manual_l2.dlc
+coco_manual_l2.onnx
+coco_manual_l2_sim.onnx
+coco_manuall2_unshaped_prob.onnx
+coco_manuall2_unshaped_prob_sim.dlc
+coco_manuall2_unshaped_prob_sim.onnx
