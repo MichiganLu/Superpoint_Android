@@ -1,0 +1,11 @@
+*.jpg
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/build/*
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/*
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/test_image_845/*
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/test_image_845
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/test_image_x64/*
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/test_image_x64
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/test_img_845/*
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/test_img_pc/*
+/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/test_result.ods
+

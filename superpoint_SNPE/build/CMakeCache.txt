@@ -14,29 +14,11 @@
 # EXTERNAL cache entries
 ########################
 
-//No help, variable specified on the command line.
-ANDROID_ABI:UNINITIALIZED=arm64-v8a
-
-//No help, variable specified on the command line.
-ANDROID_NDK:UNINITIALIZED=/home/cvte-vm/Downloads/unify_ndk-master
-
-//No help, variable specified on the command line.
-ANDROID_PLATFORM:UNINITIALIZED=android-24
+//Path to a program.
+CMAKE_ADDR2LINE:FILEPATH=/usr/bin/addr2line
 
 //Path to a program.
-CMAKE_ADDR2LINE:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-addr2line
-
-//Archiver
-CMAKE_AR:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-ar
-
-//Flags used by the compiler during all build types.
-CMAKE_ASM_FLAGS:STRING=
-
-//Flags used by the compiler during debug builds.
-CMAKE_ASM_FLAGS_DEBUG:STRING=
-
-//Flags used by the compiler during release builds.
-CMAKE_ASM_FLAGS_RELEASE:STRING=
+CMAKE_AR:FILEPATH=/usr/bin/ar
 
 //Choose the type of build, options are: None Debug Release RelWithDebInfo
 // MinSizeRel ...
@@ -45,58 +27,62 @@ CMAKE_BUILD_TYPE:STRING=
 //Enable/Disable color output during build.
 CMAKE_COLOR_MAKEFILE:BOOL=ON
 
-//LLVM archiver
-CMAKE_CXX_COMPILER_AR:FILEPATH=CMAKE_CXX_COMPILER_AR-NOTFOUND
+//CXX compiler
+CMAKE_CXX_COMPILER:FILEPATH=/usr/bin/c++
 
-//Generate index for LLVM archive
-CMAKE_CXX_COMPILER_RANLIB:FILEPATH=CMAKE_CXX_COMPILER_RANLIB-NOTFOUND
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-7
 
-//Flags used by the compiler during all build types.
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_CXX_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-7
+
+//Flags used by the CXX compiler during all build types.
 CMAKE_CXX_FLAGS:STRING=
 
-//Flags used by the compiler during debug builds.
-CMAKE_CXX_FLAGS_DEBUG:STRING=
+//Flags used by the CXX compiler during DEBUG builds.
+CMAKE_CXX_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the CXX compiler during MINSIZEREL builds.
 CMAKE_CXX_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
-//Flags used by the compiler during release builds.
-CMAKE_CXX_FLAGS_RELEASE:STRING=
+//Flags used by the CXX compiler during RELEASE builds.
+CMAKE_CXX_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the CXX compiler during RELWITHDEBINFO builds.
 CMAKE_CXX_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//Libraries linked by default with all C++ applications.
-CMAKE_CXX_STANDARD_LIBRARIES:STRING=-latomic -lm
+//C compiler
+CMAKE_C_COMPILER:FILEPATH=/usr/bin/cc
 
-//LLVM archiver
-CMAKE_C_COMPILER_AR:FILEPATH=CMAKE_C_COMPILER_AR-NOTFOUND
+//A wrapper around 'ar' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_AR:FILEPATH=/usr/bin/gcc-ar-7
 
-//Generate index for LLVM archive
-CMAKE_C_COMPILER_RANLIB:FILEPATH=CMAKE_C_COMPILER_RANLIB-NOTFOUND
+//A wrapper around 'ranlib' adding the appropriate '--plugin' option
+// for the GCC compiler
+CMAKE_C_COMPILER_RANLIB:FILEPATH=/usr/bin/gcc-ranlib-7
 
-//Flags used by the compiler during all build types.
+//Flags used by the C compiler during all build types.
 CMAKE_C_FLAGS:STRING=
 
-//Flags used by the compiler during debug builds.
-CMAKE_C_FLAGS_DEBUG:STRING=
+//Flags used by the C compiler during DEBUG builds.
+CMAKE_C_FLAGS_DEBUG:STRING=-g
 
 //Flags used by the C compiler during MINSIZEREL builds.
 CMAKE_C_FLAGS_MINSIZEREL:STRING=-Os -DNDEBUG
 
-//Flags used by the compiler during release builds.
-CMAKE_C_FLAGS_RELEASE:STRING=
+//Flags used by the C compiler during RELEASE builds.
+CMAKE_C_FLAGS_RELEASE:STRING=-O3 -DNDEBUG
 
 //Flags used by the C compiler during RELWITHDEBINFO builds.
 CMAKE_C_FLAGS_RELWITHDEBINFO:STRING=-O2 -g -DNDEBUG
 
-//Libraries linked by default with all C applications.
-CMAKE_C_STANDARD_LIBRARIES:STRING=-latomic -lm
-
 //Path to a program.
 CMAKE_DLLTOOL:FILEPATH=CMAKE_DLLTOOL-NOTFOUND
 
-//Flags used by the linker.
+//Flags used by the linker during all build types.
 CMAKE_EXE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during DEBUG builds.
@@ -118,12 +104,13 @@ CMAKE_EXPORT_COMPILE_COMMANDS:BOOL=
 CMAKE_INSTALL_PREFIX:PATH=/usr/local
 
 //Path to a program.
-CMAKE_LINKER:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/ld.lld
+CMAKE_LINKER:FILEPATH=/usr/bin/ld
 
 //Path to a program.
 CMAKE_MAKE_PROGRAM:FILEPATH=/usr/bin/make
 
-//Flags used by the linker during the creation of modules.
+//Flags used by the linker during the creation of modules during
+// all build types.
 CMAKE_MODULE_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of modules during
@@ -143,13 +130,13 @@ CMAKE_MODULE_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_NM:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-nm
+CMAKE_NM:FILEPATH=/usr/bin/nm
 
 //Path to a program.
-CMAKE_OBJCOPY:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objcopy
+CMAKE_OBJCOPY:FILEPATH=/usr/bin/objcopy
 
 //Path to a program.
-CMAKE_OBJDUMP:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-objdump
+CMAKE_OBJDUMP:FILEPATH=/usr/bin/objdump
 
 //Value Computed by CMake
 CMAKE_PROJECT_DESCRIPTION:STATIC=
@@ -160,13 +147,14 @@ CMAKE_PROJECT_HOMEPAGE_URL:STATIC=
 //Value Computed by CMake
 CMAKE_PROJECT_NAME:STATIC=superpoint_ncnn
 
-//Ranlib
-CMAKE_RANLIB:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-ranlib
+//Path to a program.
+CMAKE_RANLIB:FILEPATH=/usr/bin/ranlib
 
 //Path to a program.
-CMAKE_READELF:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/llvm-readelf
+CMAKE_READELF:FILEPATH=/usr/bin/readelf
 
-//Flags used by the linker during the creation of dll's.
+//Flags used by the linker during the creation of shared libraries
+// during all build types.
 CMAKE_SHARED_LINKER_FLAGS:STRING=
 
 //Flags used by the linker during the creation of shared libraries
@@ -213,10 +201,7 @@ CMAKE_STATIC_LINKER_FLAGS_RELEASE:STRING=
 CMAKE_STATIC_LINKER_FLAGS_RELWITHDEBINFO:STRING=
 
 //Path to a program.
-CMAKE_STRIP:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/aarch64-linux-android-strip
-
-//The CMake toolchain file
-CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/build/cmake/android.toolchain.cmake
+CMAKE_STRIP:FILEPATH=/usr/bin/strip
 
 //If this value is on, makefiles will be generated without the
 // .SILENT directive, and all commands will be echoed to the console
@@ -224,8 +209,20 @@ CMAKE_TOOLCHAIN_FILE:FILEPATH=/home/cvte-vm/Downloads/unify_ndk-master/build/cma
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for OpenCV.
+OpenCV_DIR:PATH=/usr/local/share/OpenCV
+
+//Arguments to supply to pkg-config
+PKG_CONFIG_ARGN:STRING=
+
+//pkg-config executable
+PKG_CONFIG_EXECUTABLE:FILEPATH=/usr/bin/pkg-config
+
+//Path to a library.
+pkgcfg_lib_glog_glog:FILEPATH=/usr/local/lib/libglog.so
+
 //Dependencies for the target
-sp_SNPE_lib_LIB_DEPENDS:STATIC=general;android;general;log;general;jnigraphics;general;glog;general;gflags;general;gflags_nothreads;general;opencv_world;general;c++_shared;general;SNPE;
+sp_SNPE_lib_LIB_DEPENDS:STATIC=general;opencv_core;general;opencv_highgui;general;opencv_imgcodecs;general;opencv_features2d;general;glog;general;HtpPrepare;general;omp;general;SNPE;
 
 //Value Computed by CMake
 superpoint_ncnn_BINARY_DIR:STATIC=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build
@@ -261,6 +258,8 @@ CMAKE_COMMAND:INTERNAL=/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cma
 CMAKE_CPACK_COMMAND:INTERNAL=/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/cpack
 //Path to ctest program executable.
 CMAKE_CTEST_COMMAND:INTERNAL=/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/ctest
+//ADVANCED property for variable: CMAKE_CXX_COMPILER
+CMAKE_CXX_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_AR
 CMAKE_CXX_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_COMPILER_RANLIB
@@ -275,8 +274,8 @@ CMAKE_CXX_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_CXX_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_CXX_FLAGS_RELWITHDEBINFO
 CMAKE_CXX_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_CXX_STANDARD_LIBRARIES
-CMAKE_CXX_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: CMAKE_C_COMPILER
+CMAKE_C_COMPILER-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_AR
 CMAKE_C_COMPILER_AR-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_COMPILER_RANLIB
@@ -291,12 +290,12 @@ CMAKE_C_FLAGS_MINSIZEREL-ADVANCED:INTERNAL=1
 CMAKE_C_FLAGS_RELEASE-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_C_FLAGS_RELWITHDEBINFO
 CMAKE_C_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
-//ADVANCED property for variable: CMAKE_C_STANDARD_LIBRARIES
-CMAKE_C_STANDARD_LIBRARIES-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_DLLTOOL
 CMAKE_DLLTOOL-ADVANCED:INTERNAL=1
 //Path to cache edit program executable.
 CMAKE_EDIT_COMMAND:INTERNAL=/home/cvte-vm/Downloads/cmake-3.22.1-linux-x86_64/bin/ccmake
+//Executable file format
+CMAKE_EXECUTABLE_FORMAT:INTERNAL=ELF
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS
 CMAKE_EXE_LINKER_FLAGS-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_EXE_LINKER_FLAGS_DEBUG
@@ -384,4 +383,52 @@ CMAKE_STRIP-ADVANCED:INTERNAL=1
 CMAKE_UNAME:INTERNAL=/bin/uname
 //ADVANCED property for variable: CMAKE_VERBOSE_MAKEFILE
 CMAKE_VERBOSE_MAKEFILE-ADVANCED:INTERNAL=1
+//Details about finding OpenCV
+FIND_PACKAGE_MESSAGE_DETAILS_OpenCV:INTERNAL=[/usr/local][cfound components: core highgui imgcodecs features2d ][v3.4.15()]
+//Details about finding PkgConfig
+FIND_PACKAGE_MESSAGE_DETAILS_PkgConfig:INTERNAL=[/usr/bin/pkg-config][v0.29.1()]
+//ADVANCED property for variable: PKG_CONFIG_ARGN
+PKG_CONFIG_ARGN-ADVANCED:INTERNAL=1
+//ADVANCED property for variable: PKG_CONFIG_EXECUTABLE
+PKG_CONFIG_EXECUTABLE-ADVANCED:INTERNAL=1
+__pkg_config_arguments_glog:INTERNAL=REQUIRED;libglog
+__pkg_config_checked_glog:INTERNAL=1
+glog_CFLAGS:INTERNAL=-I/usr/local/include
+glog_CFLAGS_I:INTERNAL=
+glog_CFLAGS_OTHER:INTERNAL=
+glog_FOUND:INTERNAL=1
+glog_INCLUDEDIR:INTERNAL=/usr/local/include
+glog_INCLUDE_DIRS:INTERNAL=/usr/local/include
+glog_LDFLAGS:INTERNAL=-L/usr/local/lib;-lglog
+glog_LDFLAGS_OTHER:INTERNAL=
+glog_LIBDIR:INTERNAL=/usr/local/lib
+glog_LIBRARIES:INTERNAL=glog
+glog_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+glog_LIBS:INTERNAL=
+glog_LIBS_L:INTERNAL=
+glog_LIBS_OTHER:INTERNAL=
+glog_LIBS_PATHS:INTERNAL=
+glog_MODULE_NAME:INTERNAL=libglog
+glog_PREFIX:INTERNAL=/usr/local
+glog_STATIC_CFLAGS:INTERNAL=-I/usr/local/include
+glog_STATIC_CFLAGS_I:INTERNAL=
+glog_STATIC_CFLAGS_OTHER:INTERNAL=
+glog_STATIC_INCLUDE_DIRS:INTERNAL=/usr/local/include
+glog_STATIC_LDFLAGS:INTERNAL=-L/usr/local/lib;-lglog
+glog_STATIC_LDFLAGS_OTHER:INTERNAL=
+glog_STATIC_LIBDIR:INTERNAL=
+glog_STATIC_LIBRARIES:INTERNAL=glog
+glog_STATIC_LIBRARY_DIRS:INTERNAL=/usr/local/lib
+glog_STATIC_LIBS:INTERNAL=
+glog_STATIC_LIBS_L:INTERNAL=
+glog_STATIC_LIBS_OTHER:INTERNAL=
+glog_STATIC_LIBS_PATHS:INTERNAL=
+glog_VERSION:INTERNAL=0.6.0
+glog_libglog_INCLUDEDIR:INTERNAL=
+glog_libglog_LIBDIR:INTERNAL=
+glog_libglog_PREFIX:INTERNAL=
+glog_libglog_VERSION:INTERNAL=
+//ADVANCED property for variable: pkgcfg_lib_glog_glog
+pkgcfg_lib_glog_glog-ADVANCED:INTERNAL=1
+prefix_result:INTERNAL=/usr/local/lib
 

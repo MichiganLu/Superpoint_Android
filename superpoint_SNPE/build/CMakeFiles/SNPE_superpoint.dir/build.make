@@ -73,15 +73,15 @@ CMakeFiles/SNPE_superpoint.dir/main.cpp.o: CMakeFiles/SNPE_superpoint.dir/flags.
 CMakeFiles/SNPE_superpoint.dir/main.cpp.o: ../main.cpp
 CMakeFiles/SNPE_superpoint.dir/main.cpp.o: CMakeFiles/SNPE_superpoint.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/SNPE_superpoint.dir/main.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SNPE_superpoint.dir/main.cpp.o -MF CMakeFiles/SNPE_superpoint.dir/main.cpp.o.d -o CMakeFiles/SNPE_superpoint.dir/main.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/main.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/SNPE_superpoint.dir/main.cpp.o -MF CMakeFiles/SNPE_superpoint.dir/main.cpp.o.d -o CMakeFiles/SNPE_superpoint.dir/main.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/main.cpp
 
 CMakeFiles/SNPE_superpoint.dir/main.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/SNPE_superpoint.dir/main.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/main.cpp > CMakeFiles/SNPE_superpoint.dir/main.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/main.cpp > CMakeFiles/SNPE_superpoint.dir/main.cpp.i
 
 CMakeFiles/SNPE_superpoint.dir/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/SNPE_superpoint.dir/main.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/main.cpp -o CMakeFiles/SNPE_superpoint.dir/main.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/main.cpp -o CMakeFiles/SNPE_superpoint.dir/main.cpp.s
 
 # Object files for target SNPE_superpoint
 SNPE_superpoint_OBJECTS = \
@@ -90,15 +90,22 @@ SNPE_superpoint_OBJECTS = \
 # External object files for target SNPE_superpoint
 SNPE_superpoint_EXTERNAL_OBJECTS =
 
-android/bin/SNPE_superpoint: CMakeFiles/SNPE_superpoint.dir/main.cpp.o
-android/bin/SNPE_superpoint: CMakeFiles/SNPE_superpoint.dir/build.make
-android/bin/SNPE_superpoint: android/library/libsp_SNPE_lib.so
-android/bin/SNPE_superpoint: CMakeFiles/SNPE_superpoint.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable android/bin/SNPE_superpoint"
+x64/bin/SNPE_superpoint: CMakeFiles/SNPE_superpoint.dir/main.cpp.o
+x64/bin/SNPE_superpoint: CMakeFiles/SNPE_superpoint.dir/build.make
+x64/bin/SNPE_superpoint: x64/library/libsp_SNPE_lib.so
+x64/bin/SNPE_superpoint: /usr/local/lib/libopencv_highgui.so.3.4.15
+x64/bin/SNPE_superpoint: /usr/local/lib/libopencv_videoio.so.3.4.15
+x64/bin/SNPE_superpoint: /usr/local/lib/libopencv_imgcodecs.so.3.4.15
+x64/bin/SNPE_superpoint: /usr/local/lib/libopencv_features2d.so.3.4.15
+x64/bin/SNPE_superpoint: /usr/local/lib/libopencv_imgproc.so.3.4.15
+x64/bin/SNPE_superpoint: /usr/local/lib/libopencv_flann.so.3.4.15
+x64/bin/SNPE_superpoint: /usr/local/lib/libopencv_core.so.3.4.15
+x64/bin/SNPE_superpoint: CMakeFiles/SNPE_superpoint.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable x64/bin/SNPE_superpoint"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/SNPE_superpoint.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/SNPE_superpoint.dir/build: android/bin/SNPE_superpoint
+CMakeFiles/SNPE_superpoint.dir/build: x64/bin/SNPE_superpoint
 .PHONY : CMakeFiles/SNPE_superpoint.dir/build
 
 CMakeFiles/SNPE_superpoint.dir/clean:
