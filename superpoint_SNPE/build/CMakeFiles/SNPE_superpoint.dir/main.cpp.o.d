@@ -1,265 +1,294 @@
 CMakeFiles/SNPE_superpoint.dir/main.cpp.o: \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/main.cpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/superpoint.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/algorithm \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__config \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/features.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/cdefs.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/versioning.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/api-level.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/get_device_api_level_inlines.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/ndk-version.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/pthread.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/initializer_list \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cstddef \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/version \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include/stddef.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include/__stddef_max_align_t.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__nullptr \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/type_traits \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cstring \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/string.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/string.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/stddef.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/xlocale.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/strcasecmp.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/stdint.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include/stdint.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/stdint.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/wchar_limits.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/int-ll64.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/bitsperlong.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/bitsperlong.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/posix_types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/stddef.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/compiler_types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/compiler.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/posix_types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/posix_types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/pthread_types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/strings.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/fortify/strings.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/legacy_strings_inlines.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/fortify/string.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/utility \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__tuple \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cstdint \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__debug \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/iosfwd \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/wchar.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include/wchar.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/wchar.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/stdio.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/stdio.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include/stdarg.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/seek_constants.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/fortify/stdio.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/time.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/time.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/time.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/time_types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/select.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/signal.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/sigcontext.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/sve_context.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/signal_types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/limits.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include/limits.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/limits.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/float.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include/float.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/limits.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/posix_limits.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/signal.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/signal.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/signal.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/signal-defs.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/siginfo.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/siginfo.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/timespec.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/ucontext.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sys/user.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/legacy_signal_inlines.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/mbstate_t.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/wctype.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/memory \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/typeinfo \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/exception \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cstdlib \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/stdlib.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include/stdlib.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/stdlib.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/alloca.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/wait.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/wait.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/malloc.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/fortify/stdlib.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/legacy_stdlib_inlines.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/math.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include/math.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/math.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/limits \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__undef_macros \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/new \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/iterator \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__functional_base \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/tuple \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/stdexcept \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cassert \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/assert.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/atomic \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/functional \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/bit \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/core.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/cvdef.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/hal/interface.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/cv_cpu_dispatch.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/lib64/clang/9.0.8/include/arm_neon.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/array \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/version.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/base.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/opencv_modules.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/climits \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/cvstd.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cctype \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/ctype.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/ctype.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/string \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/string_view \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__string \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cstdio \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cwchar \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cwctype \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/wctype.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include/wctype.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/wctype.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cmath \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/ptr.inl.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/neon_utils.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/vsx_utils.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/traits.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/matx.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/saturate.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/fast_math.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/types.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cfloat \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/vector \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__bit_reference \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__split_buffer \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/mat.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/bufferpool.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/mat.inl.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/persistence.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/operations.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/cvstd.inl.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/complex \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/sstream \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/ostream \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/ios \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__locale \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/mutex \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__mutex_base \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/chrono \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/ctime \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/ratio \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/system_error \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__errc \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cerrno \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/errno.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/errno.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/errno.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/aarch64-linux-android/asm/errno.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/errno.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/asm-generic/errno-base.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/android/legacy_errno_inlines.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__threading_support \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/sched.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/linux/sched.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/locale.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/local/include/locale.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/locale.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/support/android/locale_bionic.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/support/xlocale/__posix_l_fallback.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/streambuf \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/locale \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/cstdarg \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__bsd_locale_fallbacks.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/bitset \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/istream \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/utility.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/core_c.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/types_c.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/optim.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/core/ovx.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/highgui/highgui.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/highgui.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/imgcodecs.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/videoio.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/highgui/highgui_c.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/imgproc/imgproc_c.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/imgproc/types_c.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/imgcodecs/imgcodecs_c.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/videoio/videoio_c.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/imgproc/imgproc.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/imgproc.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/features2d.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/flann/miniflann.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/flann/defines.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include/opencv2/flann/config.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/fstream \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/filesystem \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/stack \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/deque \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/iomanip \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/iostream \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/timer.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/map \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__tree \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__node_handle \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/optional \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/numeric \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/numeric_types.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/getopt.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/bits/getopt.h \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/unordered_map \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/__hash_table \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/CheckRuntime.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SNPE/SNPEFactory.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SNPE/SNPE.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlOptional.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ZdlExportDefine.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlVersion.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/String.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/IBufferAttributes.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/IUserBuffer.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/TensorShape.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensor.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensorItr.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensorItrImpl.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/TensorMap.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/StringList.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/UserBufferMap.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlEnums.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/UDLFunc.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/IUDL.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/LoadContainer.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlContainer/IDlContainer.hpp \
-  /home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot/usr/include/c++/v1/set \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/LoadUDOPackage.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SetBuilderOptions.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/RuntimeList.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/PlatformConfig.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/LoadInputTensor.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensorFactory.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/CreateUserBuffer.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/PreprocessInput.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SaveOutputTensor.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/Util.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlError.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DiagLog/IDiagLog.hpp \
-  /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DiagLog/Options.hpp
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/main.cpp \
+ /usr/include/stdc-predef.h \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/superpoint.h \
+ /usr/include/c++/7/algorithm /usr/include/c++/7/utility \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/c++config.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/os_defines.h \
+ /usr/include/features.h /usr/include/x86_64-linux-gnu/sys/cdefs.h \
+ /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+ /usr/include/x86_64-linux-gnu/bits/long-double.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs.h \
+ /usr/include/x86_64-linux-gnu/gnu/stubs-64.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/cpu_defines.h \
+ /usr/include/c++/7/bits/stl_relops.h /usr/include/c++/7/bits/stl_pair.h \
+ /usr/include/c++/7/bits/move.h /usr/include/c++/7/bits/concept_check.h \
+ /usr/include/c++/7/type_traits /usr/include/c++/7/initializer_list \
+ /usr/include/c++/7/bits/stl_algobase.h \
+ /usr/include/c++/7/bits/functexcept.h \
+ /usr/include/c++/7/bits/exception_defines.h \
+ /usr/include/c++/7/bits/cpp_type_traits.h \
+ /usr/include/c++/7/ext/type_traits.h \
+ /usr/include/c++/7/ext/numeric_traits.h \
+ /usr/include/c++/7/bits/stl_iterator_base_types.h \
+ /usr/include/c++/7/bits/stl_iterator_base_funcs.h \
+ /usr/include/c++/7/debug/assertions.h \
+ /usr/include/c++/7/bits/stl_iterator.h \
+ /usr/include/c++/7/bits/ptr_traits.h /usr/include/c++/7/debug/debug.h \
+ /usr/include/c++/7/bits/predefined_ops.h \
+ /usr/include/c++/7/bits/stl_algo.h /usr/include/c++/7/cstdlib \
+ /usr/include/stdlib.h \
+ /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stddef.h \
+ /usr/include/x86_64-linux-gnu/bits/waitflags.h \
+ /usr/include/x86_64-linux-gnu/bits/waitstatus.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn.h \
+ /usr/include/x86_64-linux-gnu/bits/floatn-common.h \
+ /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__locale_t.h \
+ /usr/include/x86_64-linux-gnu/sys/types.h \
+ /usr/include/x86_64-linux-gnu/bits/types.h \
+ /usr/include/x86_64-linux-gnu/bits/typesizes.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-intn.h /usr/include/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/endian.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap.h \
+ /usr/include/x86_64-linux-gnu/bits/byteswap-16.h \
+ /usr/include/x86_64-linux-gnu/bits/uintn-identity.h \
+ /usr/include/x86_64-linux-gnu/sys/select.h \
+ /usr/include/x86_64-linux-gnu/bits/select.h \
+ /usr/include/x86_64-linux-gnu/bits/types/sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+ /usr/include/x86_64-linux-gnu/sys/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+ /usr/include/x86_64-linux-gnu/bits/thread-shared-types.h \
+ /usr/include/x86_64-linux-gnu/bits/pthreadtypes-arch.h \
+ /usr/include/alloca.h /usr/include/x86_64-linux-gnu/bits/stdlib-float.h \
+ /usr/include/c++/7/bits/std_abs.h /usr/include/c++/7/bits/algorithmfwd.h \
+ /usr/include/c++/7/bits/stl_heap.h /usr/include/c++/7/bits/stl_tempbuf.h \
+ /usr/include/c++/7/bits/stl_construct.h /usr/include/c++/7/new \
+ /usr/include/c++/7/exception /usr/include/c++/7/bits/exception.h \
+ /usr/include/c++/7/bits/exception_ptr.h \
+ /usr/include/c++/7/bits/cxxabi_init_exception.h \
+ /usr/include/c++/7/typeinfo /usr/include/c++/7/bits/hash_bytes.h \
+ /usr/include/c++/7/bits/nested_exception.h \
+ /usr/include/c++/7/ext/alloc_traits.h \
+ /usr/include/c++/7/bits/alloc_traits.h \
+ /usr/include/c++/7/bits/memoryfwd.h \
+ /usr/include/c++/7/bits/uniform_int_dist.h /usr/include/c++/7/limits \
+ /usr/local/include/opencv2/core/core.hpp \
+ /usr/local/include/opencv2/core.hpp \
+ /usr/local/include/opencv2/core/cvdef.h \
+ /usr/local/include/opencv2/core/version.hpp \
+ /usr/local/include/opencv2/core/hal/interface.h \
+ /usr/include/c++/7/cstddef /usr/include/c++/7/cstdint \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stdint.h /usr/include/stdint.h \
+ /usr/include/x86_64-linux-gnu/bits/wchar.h \
+ /usr/include/x86_64-linux-gnu/bits/stdint-uintn.h \
+ /usr/local/include/opencv2/core/cv_cpu_dispatch.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/emmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/xmmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/mmintrin.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/mm_malloc.h \
+ /usr/include/c++/7/stdlib.h /usr/include/c++/7/array \
+ /usr/include/c++/7/stdexcept /usr/include/c++/7/string \
+ /usr/include/c++/7/bits/stringfwd.h \
+ /usr/include/c++/7/bits/char_traits.h /usr/include/c++/7/bits/postypes.h \
+ /usr/include/c++/7/cwchar /usr/include/wchar.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/stdarg.h \
+ /usr/include/x86_64-linux-gnu/bits/types/wint_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__mbstate_t.h \
+ /usr/include/x86_64-linux-gnu/bits/types/__FILE.h \
+ /usr/include/x86_64-linux-gnu/bits/types/FILE.h \
+ /usr/include/c++/7/bits/allocator.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/c++allocator.h \
+ /usr/include/c++/7/ext/new_allocator.h \
+ /usr/include/c++/7/bits/localefwd.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/c++locale.h \
+ /usr/include/c++/7/clocale /usr/include/locale.h \
+ /usr/include/x86_64-linux-gnu/bits/locale.h /usr/include/c++/7/iosfwd \
+ /usr/include/c++/7/cctype /usr/include/ctype.h \
+ /usr/include/c++/7/bits/ostream_insert.h \
+ /usr/include/c++/7/bits/cxxabi_forced.h \
+ /usr/include/c++/7/bits/stl_function.h \
+ /usr/include/c++/7/backward/binders.h \
+ /usr/include/c++/7/bits/range_access.h \
+ /usr/include/c++/7/bits/basic_string.h \
+ /usr/include/c++/7/ext/atomicity.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/gthr.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/gthr-default.h \
+ /usr/include/pthread.h /usr/include/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/sched.h \
+ /usr/include/x86_64-linux-gnu/bits/cpu-set.h /usr/include/time.h \
+ /usr/include/x86_64-linux-gnu/bits/time.h \
+ /usr/include/x86_64-linux-gnu/bits/timex.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+ /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+ /usr/include/x86_64-linux-gnu/bits/setjmp.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/atomic_word.h \
+ /usr/include/c++/7/ext/string_conversions.h /usr/include/c++/7/cstdio \
+ /usr/include/stdio.h /usr/include/x86_64-linux-gnu/bits/libio.h \
+ /usr/include/x86_64-linux-gnu/bits/_G_config.h \
+ /usr/include/x86_64-linux-gnu/bits/stdio_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/sys_errlist.h \
+ /usr/include/c++/7/cerrno /usr/include/errno.h \
+ /usr/include/x86_64-linux-gnu/bits/errno.h /usr/include/linux/errno.h \
+ /usr/include/x86_64-linux-gnu/asm/errno.h \
+ /usr/include/asm-generic/errno.h /usr/include/asm-generic/errno-base.h \
+ /usr/include/c++/7/bits/functional_hash.h \
+ /usr/include/c++/7/bits/basic_string.tcc \
+ /usr/local/include/opencv2/core/base.hpp \
+ /usr/local/include/opencv2/opencv_modules.hpp /usr/include/c++/7/climits \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/limits.h \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include-fixed/syslimits.h \
+ /usr/include/limits.h /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+ /usr/include/linux/limits.h \
+ /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+ /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+ /usr/local/include/opencv2/core/cvstd.hpp /usr/include/c++/7/cstring \
+ /usr/include/string.h /usr/include/strings.h /usr/include/c++/7/cmath \
+ /usr/include/math.h /usr/include/x86_64-linux-gnu/bits/math-vector.h \
+ /usr/include/x86_64-linux-gnu/bits/libm-simd-decl-stubs.h \
+ /usr/include/x86_64-linux-gnu/bits/flt-eval-method.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-logb.h \
+ /usr/include/x86_64-linux-gnu/bits/fp-fast.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls-helper-functions.h \
+ /usr/include/x86_64-linux-gnu/bits/mathcalls.h \
+ /usr/include/x86_64-linux-gnu/bits/iscanonical.h \
+ /usr/local/include/opencv2/core/ptr.inl.hpp \
+ /usr/local/include/opencv2/core/neon_utils.hpp \
+ /usr/local/include/opencv2/core/vsx_utils.hpp /usr/include/assert.h \
+ /usr/local/include/opencv2/core/check.hpp \
+ /usr/local/include/opencv2/core/traits.hpp \
+ /usr/local/include/opencv2/core/matx.hpp \
+ /usr/local/include/opencv2/core/saturate.hpp \
+ /usr/local/include/opencv2/core/fast_math.hpp \
+ /usr/local/include/opencv2/core/types.hpp /usr/include/c++/7/cfloat \
+ /usr/lib/gcc/x86_64-linux-gnu/7/include/float.h \
+ /usr/include/c++/7/vector /usr/include/c++/7/bits/stl_uninitialized.h \
+ /usr/include/c++/7/bits/stl_vector.h \
+ /usr/include/c++/7/bits/stl_bvector.h /usr/include/c++/7/bits/vector.tcc \
+ /usr/local/include/opencv2/core/mat.hpp \
+ /usr/local/include/opencv2/core/bufferpool.hpp \
+ /usr/local/include/opencv2/core/mat.inl.hpp \
+ /usr/local/include/opencv2/core/persistence.hpp \
+ /usr/local/include/opencv2/core/operations.hpp \
+ /usr/local/include/opencv2/core/cvstd.inl.hpp /usr/include/c++/7/complex \
+ /usr/include/c++/7/sstream /usr/include/c++/7/istream \
+ /usr/include/c++/7/ios /usr/include/c++/7/bits/ios_base.h \
+ /usr/include/c++/7/bits/locale_classes.h \
+ /usr/include/c++/7/bits/locale_classes.tcc \
+ /usr/include/c++/7/system_error \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/error_constants.h \
+ /usr/include/c++/7/streambuf /usr/include/c++/7/bits/streambuf.tcc \
+ /usr/include/c++/7/bits/basic_ios.h \
+ /usr/include/c++/7/bits/locale_facets.h /usr/include/c++/7/cwctype \
+ /usr/include/wctype.h /usr/include/x86_64-linux-gnu/bits/wctype-wchar.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/ctype_base.h \
+ /usr/include/c++/7/bits/streambuf_iterator.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/ctype_inline.h \
+ /usr/include/c++/7/bits/locale_facets.tcc \
+ /usr/include/c++/7/bits/basic_ios.tcc /usr/include/c++/7/ostream \
+ /usr/include/c++/7/bits/ostream.tcc /usr/include/c++/7/bits/istream.tcc \
+ /usr/include/c++/7/bits/sstream.tcc \
+ /usr/local/include/opencv2/core/utility.hpp \
+ /usr/include/c++/7/functional /usr/include/c++/7/tuple \
+ /usr/include/c++/7/bits/uses_allocator.h \
+ /usr/include/c++/7/bits/invoke.h /usr/include/c++/7/bits/std_function.h \
+ /usr/include/c++/7/bits/refwrap.h \
+ /usr/local/include/opencv2/core/core_c.h \
+ /usr/local/include/opencv2/core/types_c.h \
+ /usr/local/include/opencv2/core/optim.hpp \
+ /usr/local/include/opencv2/core/ovx.hpp \
+ /usr/local/include/opencv2/core/cvdef.h \
+ /usr/local/include/opencv2/highgui/highgui.hpp \
+ /usr/local/include/opencv2/highgui.hpp \
+ /usr/local/include/opencv2/imgcodecs.hpp \
+ /usr/local/include/opencv2/videoio.hpp \
+ /usr/local/include/opencv2/highgui/highgui_c.h \
+ /usr/local/include/opencv2/imgproc/imgproc_c.h \
+ /usr/local/include/opencv2/imgproc/types_c.h \
+ /usr/local/include/opencv2/imgcodecs/imgcodecs_c.h \
+ /usr/local/include/opencv2/videoio/videoio_c.h \
+ /usr/local/include/opencv2/imgproc/imgproc.hpp \
+ /usr/local/include/opencv2/imgproc.hpp \
+ /usr/local/include/opencv2/features2d.hpp \
+ /usr/local/include/opencv2/flann/miniflann.hpp \
+ /usr/local/include/opencv2/flann/defines.h \
+ /usr/local/include/opencv2/flann/config.h /usr/include/c++/7/fstream \
+ /usr/include/c++/7/bits/codecvt.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/basic_file.h \
+ /usr/include/x86_64-linux-gnu/c++/7/bits/c++io.h \
+ /usr/include/c++/7/bits/fstream.tcc /usr/include/c++/7/iostream \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/timer.h \
+ /usr/include/c++/7/chrono /usr/include/c++/7/ratio \
+ /usr/include/c++/7/ctime /usr/include/c++/7/bits/parse_numbers.h \
+ /usr/include/c++/7/map /usr/include/c++/7/bits/stl_tree.h \
+ /usr/include/c++/7/ext/aligned_buffer.h \
+ /usr/include/c++/7/bits/stl_map.h /usr/include/c++/7/bits/stl_multimap.h \
+ /usr/include/c++/7/numeric /usr/include/c++/7/bits/stl_numeric.h \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/numeric_types.h \
+ /usr/include/getopt.h /usr/include/x86_64-linux-gnu/bits/getopt_core.h \
+ /usr/include/x86_64-linux-gnu/bits/getopt_ext.h \
+ /usr/include/c++/7/iterator /usr/include/c++/7/bits/stream_iterator.h \
+ /usr/include/c++/7/unordered_map /usr/include/c++/7/bits/hashtable.h \
+ /usr/include/c++/7/bits/hashtable_policy.h \
+ /usr/include/c++/7/bits/unordered_map.h \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/CheckRuntime.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SNPE/SNPEFactory.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SNPE/SNPE.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlOptional.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ZdlExportDefine.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlVersion.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/String.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/IBufferAttributes.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/IUserBuffer.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/TensorShape.hpp \
+ /usr/include/c++/7/memory /usr/include/c++/7/bits/stl_raw_storage_iter.h \
+ /usr/include/c++/7/ext/concurrence.h \
+ /usr/include/c++/7/bits/unique_ptr.h \
+ /usr/include/c++/7/bits/shared_ptr.h \
+ /usr/include/c++/7/bits/shared_ptr_base.h \
+ /usr/include/c++/7/bits/allocated_ptr.h \
+ /usr/include/c++/7/bits/shared_ptr_atomic.h \
+ /usr/include/c++/7/bits/atomic_base.h \
+ /usr/include/c++/7/bits/atomic_lockfree_defines.h \
+ /usr/include/c++/7/backward/auto_ptr.h /usr/include/c++/7/math.h \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensor.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensorItr.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensorItrImpl.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/TensorShape.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/TensorMap.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensor.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/StringList.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/StringList.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/IUserBuffer.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/UserBufferMap.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlEnums.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/UDLFunc.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/IUDL.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/LoadContainer.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlContainer/IDlContainer.hpp \
+ /usr/include/c++/7/set /usr/include/c++/7/bits/stl_set.h \
+ /usr/include/c++/7/bits/stl_multiset.h \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/LoadUDOPackage.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SetBuilderOptions.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/RuntimeList.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SNPE/SNPE.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlEnums.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/PlatformConfig.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/LoadInputTensor.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensorFactory.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/TensorMap.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/CreateUserBuffer.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/IUserBuffer.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/UserBufferMap.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/PreprocessInput.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/SaveOutputTensor.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/ITensor.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/Util.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/TensorShape.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/DlError.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlSystem/RuntimeList.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DlContainer/IDlContainer.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DiagLog/IDiagLog.hpp \
+ /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/include/DiagLog/Options.hpp

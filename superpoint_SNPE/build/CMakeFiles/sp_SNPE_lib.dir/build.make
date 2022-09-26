@@ -73,197 +73,197 @@ CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.ma
 CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o: ../superpoint.cpp
 CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/superpoint.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/superpoint.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/superpoint.cpp > CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/superpoint.cpp > CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/superpoint.cpp -o CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/superpoint.cpp -o CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o: ../timer.cpp
 CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/timer.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/timer.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/timer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/timer.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/timer.cpp > CMakeFiles/sp_SNPE_lib.dir/timer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/timer.cpp > CMakeFiles/sp_SNPE_lib.dir/timer.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/timer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/timer.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/timer.cpp -o CMakeFiles/sp_SNPE_lib.dir/timer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/timer.cpp -o CMakeFiles/sp_SNPE_lib.dir/timer.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o: ../snpe/utils/CheckRuntime.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CheckRuntime.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CheckRuntime.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CheckRuntime.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CheckRuntime.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CheckRuntime.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CheckRuntime.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o: ../snpe/utils/CreateGLBuffer.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLBuffer.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLBuffer.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLBuffer.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLBuffer.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLBuffer.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLBuffer.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o: ../snpe/utils/CreateGLContext.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLContext.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLContext.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLContext.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLContext.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLContext.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateGLContext.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o: ../snpe/utils/CreateUserBuffer.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateUserBuffer.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateUserBuffer.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateUserBuffer.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateUserBuffer.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateUserBuffer.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/CreateUserBuffer.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o: ../snpe/utils/LoadContainer.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadContainer.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadContainer.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadContainer.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadContainer.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadContainer.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadContainer.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o: ../snpe/utils/LoadInputTensor.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadInputTensor.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadInputTensor.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadInputTensor.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadInputTensor.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadInputTensor.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadInputTensor.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o: ../snpe/utils/LoadUDOPackage.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadUDOPackage.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadUDOPackage.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadUDOPackage.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadUDOPackage.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadUDOPackage.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/LoadUDOPackage.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o: ../snpe/utils/NV21Load.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/NV21Load.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/NV21Load.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/NV21Load.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/NV21Load.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/NV21Load.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/NV21Load.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o: ../snpe/utils/PreprocessInput.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/PreprocessInput.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/PreprocessInput.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/PreprocessInput.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/PreprocessInput.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/PreprocessInput.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/PreprocessInput.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o: ../snpe/utils/SaveOutputTensor.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SaveOutputTensor.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SaveOutputTensor.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SaveOutputTensor.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SaveOutputTensor.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SaveOutputTensor.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SaveOutputTensor.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o: ../snpe/utils/SetBuilderOptions.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SetBuilderOptions.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SetBuilderOptions.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SetBuilderOptions.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SetBuilderOptions.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SetBuilderOptions.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/SetBuilderOptions.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.s
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o: CMakeFiles/sp_SNPE_lib.dir/flags.make
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o: ../snpe/utils/Util.cpp
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o: CMakeFiles/sp_SNPE_lib.dir/compiler_depend.ts
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/Util.cpp
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o -MF CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o.d -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o -c /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/Util.cpp
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.i: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.i"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/Util.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.i
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/Util.cpp > CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.i
 
 CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.s"
-	/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++ --target=aarch64-none-linux-android24 --gcc-toolchain=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/cvte-vm/Downloads/unify_ndk-master/toolchains/llvm/prebuilt/linux-x86_64/sysroot $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/Util.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.s
+	/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/snpe/utils/Util.cpp -o CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.s
 
 # Object files for target sp_SNPE_lib
 sp_SNPE_lib_OBJECTS = \
@@ -285,27 +285,34 @@ sp_SNPE_lib_OBJECTS = \
 # External object files for target sp_SNPE_lib
 sp_SNPE_lib_EXTERNAL_OBJECTS =
 
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/build.make
-android/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library android/library/libsp_SNPE_lib.so"
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/superpoint.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/timer.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CheckRuntime.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLBuffer.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateGLContext.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/CreateUserBuffer.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadContainer.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadInputTensor.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/LoadUDOPackage.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/NV21Load.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/PreprocessInput.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SaveOutputTensor.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/SetBuilderOptions.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/snpe/utils/Util.cpp.o
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/build.make
+x64/library/libsp_SNPE_lib.so: /usr/local/lib/libopencv_highgui.so.3.4.15
+x64/library/libsp_SNPE_lib.so: /usr/local/lib/libopencv_features2d.so.3.4.15
+x64/library/libsp_SNPE_lib.so: /usr/local/lib/libopencv_videoio.so.3.4.15
+x64/library/libsp_SNPE_lib.so: /usr/local/lib/libopencv_imgcodecs.so.3.4.15
+x64/library/libsp_SNPE_lib.so: /usr/local/lib/libopencv_imgproc.so.3.4.15
+x64/library/libsp_SNPE_lib.so: /usr/local/lib/libopencv_flann.so.3.4.15
+x64/library/libsp_SNPE_lib.so: /usr/local/lib/libopencv_core.so.3.4.15
+x64/library/libsp_SNPE_lib.so: CMakeFiles/sp_SNPE_lib.dir/link.txt
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX shared library x64/library/libsp_SNPE_lib.so"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/sp_SNPE_lib.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
-CMakeFiles/sp_SNPE_lib.dir/build: android/library/libsp_SNPE_lib.so
+CMakeFiles/sp_SNPE_lib.dir/build: x64/library/libsp_SNPE_lib.so
 .PHONY : CMakeFiles/sp_SNPE_lib.dir/build
 
 CMakeFiles/sp_SNPE_lib.dir/clean:

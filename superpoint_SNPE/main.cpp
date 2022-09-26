@@ -105,10 +105,10 @@ int main()
     drawMatches( img1rgb, kps1, img2rgb, kps2, good_matches, img_matches, cv::Scalar::all(-1),
                  cv::Scalar::all(-1), std::vector<char>(), cv::DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
     // -- Show detected matches
-    cv::imwrite("DSP_pool_0.008_0.82_noSTDassign.jpg",img_matches);
-    // cv::imshow("Good Matches", img_matches );
-    // cv::waitKey(0);
-    // cv::destroyAllWindows;
+    // cv::imwrite("DSP_pool_0.008_0.82_noSTDassign.jpg",img_matches);
+    cv::imshow("Good Matches", img_matches );
+    cv::waitKey(0);
+    cv::destroyAllWindows;
 
     return 0;
 
