@@ -66,7 +66,7 @@ void Superpoint::preprocess(std::unique_ptr<zdl::SNPE::SNPE>& snpe, cv::Mat &img
 	{
 		for (int j = 0; j < img.cols; j++)
 		{
-			img.ptr<float>(i)[j] = (img.ptr<float>(i)[j] - 0)/255.0;    //for superpoint, normalized to [0,1]
+			img.ptr<float>(i)[j] = img.ptr<float>(i)[j]/255.0;    //for superpoint, normalized to [0,1]
 		}
 	}
     //convert cv mat to float vector
@@ -108,20 +108,25 @@ void Superpoint::extract_points(std::vector<std::vector<float>> &kps, zdl::DlSys
         {
             for (int c=0; c<hm_channel; c++)
             {
-                reshape_hm[h*block_size+int(c/block_size)][w*block_size+(c%block_size)] = outputHeatmap_ptr[c+w*hm_channel+h*hm_channel*hm_width];
-                if (outputHeatmap_ptr[c+w*hm_channel+h*hm_channel*hm_width] > threshold)  
+                int reshape_h = h*block_size+int(c/block_size);
+                int reshape_w = w*block_size+(c%block_size);
+                int index = c+w*hm_channel+h*hm_channel*hm_width;
+                reshape_hm[reshape_h][reshape_w] = outputHeatmap_ptr[index];
+                if (outputHeatmap_ptr[index] > threshold)  
                 {
-                    std::vector<float> temp = {float(w*block_size+(c%block_size)), float(h*block_size+int(c/block_size)), outputHeatmap_ptr[c+w*hm_channel+h*hm_channel*hm_width]};
+                    std::vector<float> temp = {float(reshape_w), float(reshape_h), outputHeatmap_ptr[index]};
                     kps.push_back(temp);
                 }
             }
         }
     }
+    timer.Start("sort");
     //sort kps by confidence in descending order
     int idx = 2;
     std::sort(kps.begin(), kps.end(), [idx](const std::vector<float>& a, const std::vector<float>& b) {
         return a[idx] > b[idx];
     });
+    timer.StopAndCount("sort");
     //print for debug
     // for (size_t i = 0; i < kps.size(); i++) {
     //     for (size_t j = 0; j < kps[i].size(); j++) {
@@ -206,6 +211,10 @@ void Superpoint::extract_descriptor(zdl::DlSystem::ITensor* outputDesc, const st
             w1 = 38;
             w2 = 39;
         }
+        float w2w = w2-w;
+        float h2h = h2-h;
+        float ww1 = w-w1;
+        float hh1 = h-h1;
         //print for debug
         // if (w1<0 || w2<0 || h1<0 || h2<0)
         // {
@@ -225,7 +234,7 @@ void Superpoint::extract_descriptor(zdl::DlSystem::ITensor* outputDesc, const st
             float q12 = outputDesc_ptr[c+w1*desc_channel+h2*desc_width*desc_channel];
             float q21 = outputDesc_ptr[c+w2*desc_channel+h1*desc_width*desc_channel];
             float q22 = outputDesc_ptr[c+w2*desc_channel+h2*desc_width*desc_channel];
-            temp_descriptor[c] = ((w2-w)*(h2-h))/((w2-w1)*(h2-h1))*q11 + ((w-w1)*(h2-h))/((w2-w1)*(h2-h1))*q21 + ((w2-w)*(h-h1))/((w2-w1)*(h2-h1))*q12 + ((w-w1)*(h-h1))/((w2-w1)*(h2-h1))*q22;
+            temp_descriptor[c] = (w2w*h2h)*q11 + (ww1*h2h)*q21 + (w2w*hh1)*q12 + (ww1*hh1)*q22;
         }
         descriptor.push_back(temp_descriptor);
     }

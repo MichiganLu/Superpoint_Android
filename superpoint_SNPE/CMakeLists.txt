@@ -10,7 +10,10 @@ message("system_name=${CMAKE_SYSTEM_NAME}, host_name=${CMAKE_HOST_SYSTEM_NAME}")
 if (CMAKE_SYSTEM_NAME STREQUAL CMAKE_HOST_SYSTEM_NAME)
     SET(CMAKE_BUILD_TYPE "Debug")
     SET(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g2 -ggdb")
+else()
+    SET(CMAKE_BUILD_TYPE "Release")
 endif()
+message("cmake build type is ${CMAKE_BUILD_TYPE}")
 
 #传参到C++文件控制宏
 if (CMAKE_SYSTEM_NAME STREQUAL "Android")  #x64 compilation
