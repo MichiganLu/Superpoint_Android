@@ -35,10 +35,10 @@ int main()
     const char* inputFile1 = "../img/1.ppm";
     const char* inputFile2 = "../img/2.ppm";
     #else
-    const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
-    const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
-    // const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/1.ppm";
-    // const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/5.ppm";
+    // const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
+    // const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
+    const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/1.ppm";
+    const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/5.ppm";
     #endif
     std::ifstream inputList(inputFile1);
     if (!inputList) {
@@ -63,6 +63,12 @@ int main()
     //descriptor is of dimension N*256, N for number of keypoints, 256 for descriptor length
     for (int t=0; t<1; t++)
     {
+    // std::vector<cv::Point2f> final_kps1;
+    // std::vector<std::vector<float>> descriptor1;
+    // std::vector<cv::Point2f> final_kps2;
+    // std::vector<std::vector<float>> descriptor2;
+    // cv::Mat img11 = img1.clone();
+    // cv::Mat img22 = img2.clone();
     timer2.Start("first_img_total_processing_time");
     model.detect_and_compute(img1,final_kps1,descriptor1);
     timer2.StopAndCount("first_img_total_processing_time");
@@ -87,17 +93,31 @@ int main()
 
     //-- Step 2: Matching descriptor vectors with a FLANN based matcher
     // Since SuperPoint is a floating-point descriptor NORM_L2 is used
-    cv::Ptr<cv::DescriptorMatcher> matcher = cv::DescriptorMatcher::create(cv::DescriptorMatcher::FLANNBASED);
-    std::vector< std::vector<cv::DMatch> > knn_matches;
-    matcher->knnMatch( desc1, desc2, knn_matches, 2 );
+    //KNN
+    // std::vector< std::vector<cv::DMatch> > knn_matches;
+    // cv::Ptr<cv::DescriptorMatcher> matcher = cv::DescriptorMatcher::create(cv::DescriptorMatcher::FLANNBASED);
+    // matcher->knnMatch( desc1, desc2, knn_matches, 2 );
     //-- Filter matches using the Lowe's ratio test
-    const float ratio_thresh = 0.82f;
+    // const float ratio_thresh = 0.82f;
+    // std::vector<cv::DMatch> good_matches;
+    // for (size_t i = 0; i < knn_matches.size(); i++)
+    // {
+    //     if (knn_matches[i][0].distance < ratio_thresh * knn_matches[i][1].distance)
+    //     {
+    //         good_matches.push_back(knn_matches[i][0]);
+    //     }
+    // }
+
+    //BFMatcher
+    std::vector<cv::DMatch> matches;
+    cv::BFMatcher matcher(4, true);
+    matcher.match(desc1,desc2, matches);
     std::vector<cv::DMatch> good_matches;
-    for (size_t i = 0; i < knn_matches.size(); i++)
+    for (int i = 0; i < matches.size(); i++)
     {
-        if (knn_matches[i][0].distance < ratio_thresh * knn_matches[i][1].distance)
+        if (matches[i].distance < 0.77)
         {
-            good_matches.push_back(knn_matches[i][0]);
+        good_matches.push_back(matches[i]);
         }
     }
     //-- Draw matches
@@ -105,7 +125,7 @@ int main()
     drawMatches( img1rgb, kps1, img2rgb, kps2, good_matches, img_matches, cv::Scalar::all(-1),
                  cv::Scalar::all(-1), std::vector<char>(), cv::DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
     // -- Show detected matches
-    // cv::imwrite("DSP_pool_0.008_0.82_noSTDassign.jpg",img_matches);
+    // cv::imwrite("DSP_pool_0.008_0.77_top1k.jpg",img_matches);
     cv::imshow("Good Matches", img_matches );
     cv::waitKey(0);
     cv::destroyAllWindows;

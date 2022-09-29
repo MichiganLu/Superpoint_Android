@@ -59,23 +59,31 @@ Superpoint::Superpoint(char *dlc_path)
 
 void Superpoint::preprocess(std::unique_ptr<zdl::SNPE::SNPE>& snpe, cv::Mat &img, zdl::DlSystem::TensorMap &inputTensorMap)
 {
+    timer.Start("preprocess_convert_resize");
     img.convertTo(img, CV_32FC1);
     cv::resize(img, img, cv::Size(320, 240), cv::INTER_LINEAR);
+    timer.StopAndCount("preprocess_convert_resize");
+
     //normalize image
-    for (int i = 0; i < img.rows; i++)
-	{
-		for (int j = 0; j < img.cols; j++)
-		{
-			img.ptr<float>(i)[j] = img.ptr<float>(i)[j]/255.0;    //for superpoint, normalized to [0,1]
-		}
-	}
+    // for (int i = 0; i < img.rows; i++)
+	// {
+	// 	for (int j = 0; j < img.cols; j++)
+	// 	{
+	// 		img.ptr<float>(i)[j] = img.ptr<float>(i)[j]/255.0;    //for superpoint, normalized to [0,1]
+	// 	}
+	// }
+    timer.Start("preprocess_normalize");
+    img = img/255.0;
+    timer.StopAndCount("preprocess_normalize");
+
     //convert cv mat to float vector
-    std::vector<float> inputVec = img.reshape(1,1);
-    //print for debug
-    // std::cout << "\nMin Element = "<< *std::min_element(inputVec.begin(), inputVec.end());
-    // std::cout << "\nMax Element = "<< *std::max_element(inputVec.begin(), inputVec.end()) << std::endl;
+    // timer.Start("preprocess_inputvec");
+    // std::vector<float> inputVec = img.reshape(1,1);
+    // timer.StopAndCount("preprocess_inputvec");
+
 
     //get input tensor name
+    timer.Start("preprocess_create tensor");
     const auto& inputTensorNamesRef = snpe->getInputTensorNames();
     if (!inputTensorNamesRef) throw std::runtime_error("Error obtaining Input tensor names");
     const auto &inputTensorNames = *inputTensorNamesRef;
@@ -84,15 +92,21 @@ void Superpoint::preprocess(std::unique_ptr<zdl::SNPE::SNPE>& snpe, cv::Mat &img
     const auto &inputShape_opt = snpe->getInputDimensions(inputTensorNames.at(0));
     const auto &inputShape = *inputShape_opt;
     std::unique_ptr<zdl::DlSystem::ITensor> input = zdl::SNPE::SNPEFactory::getTensorFactory().createTensor(inputShape);
-    if (input->getSize() != inputVec.size()) {
-        std::cerr << "Size of input does not match network.\n"
-                    << "Expecting: " << input->getSize() << "\n"
-                    << "Got: " << inputVec.size() << "\n";
-        exit(-1);
-    }
+    timer.StopAndCount("preprocess_create tensor");
+    // if (input->getSize() != inputVec.size()) {
+    //     std::cerr << "Size of input does not match network.\n"
+    //                 << "Expecting: " << input->getSize() << "\n"
+    //                 << "Got: " << inputVec.size() << "\n";
+    //     exit(-1);
+    // }
+
     //place data to Itensor
-    std::copy(inputVec.begin(), inputVec.end(), input->begin());
+    timer.Start("preprocess_place_to_itensor");
+    float *begin_ptr = img.ptr<float>(0);
+    float *end_ptr = begin_ptr+img.cols*img.rows;
+    std::copy(begin_ptr, end_ptr, input->begin());
     inputTensorMap.add(inputName.c_str(), input.release());
+    timer.StopAndCount("preprocess_place_to_itensor");
     //return input tensor map
     std::cout << "Finished processing inputs for current inference \n";
 }
@@ -123,7 +137,7 @@ void Superpoint::extract_points(std::vector<std::vector<float>> &kps, zdl::DlSys
     timer.Start("sort");
     //sort kps by confidence in descending order
     int idx = 2;
-    std::sort(kps.begin(), kps.end(), [idx](const std::vector<float>& a, const std::vector<float>& b) {
+    std::sort(kps.begin(), kps.end(), [idx](const std::vector<float>& a, const std::vector<float>& b) {  //this is lambda function, inside [] is the arg you pass
         return a[idx] > b[idx];
     });
     timer.StopAndCount("sort");
@@ -141,6 +155,7 @@ void Superpoint::nms(std::vector<std::vector<float>> &kps, std::vector<std::vect
     //kps is in width(column), height(row), notice that you should access element by matrix[height][width]
     //within nms_map: 1 is occupied, 0 is free to occupy, -1 is suppressed
     //nms radius is 4 pixels
+    int count = 0;
     cv::Mat nms_map(240+2*nms_radius, 320+2*nms_radius, CV_32SC1, cv::Scalar::all(0));    //the +2*nms_radius accounts for padding on the left, right, above, below
     for (size_t i=0; i<kps.size(); i++)    //iterate over points in descending order based on confidence
     {
@@ -158,19 +173,17 @@ void Superpoint::nms(std::vector<std::vector<float>> &kps, std::vector<std::vect
             }
             //occupying the keypoint
             nms_map.ptr<int>(temp_h)[temp_w] = 1;
-        }
-    }
-    //extract unsuppressed points
-    for (int r=2*nms_radius; r<nms_map.rows-2*nms_radius; r++)     //-2*nms_radius to get rid of padding and corner point
-    {
-        for (int c=2*nms_radius; c<nms_map.cols-2*nms_radius; c++)
-        {
-            if (nms_map.ptr<int>(r)[c] == 1)
+            //record kps and jump out if more than 1000 kps
+            if ((temp_h-2*nms_radius)>-1 && (temp_h+2*nms_radius)<nms_map.rows)
             {
-                int width = c-nms_radius;   //you have offseted width and height, you need to cancel the offset when extract points
-                int height = r-nms_radius;
-                std::vector<float> temp = {float(width),float(height)};  //nms_kps also in width, height
-                nms_kps.push_back(temp);
+                if ((temp_w-2*nms_radius)>-1 && (temp_w+2*nms_radius)<nms_map.cols)
+                {
+                    std::vector<float> temp = {float(temp_w-nms_radius),float(temp_h-nms_radius)};  //nms_kps also in width, height
+                    nms_kps.push_back(temp);
+                    count++;
+                    if (count > 999) goto enough;
+                }
+                
             }
         }
     }
@@ -184,6 +197,8 @@ void Superpoint::nms(std::vector<std::vector<float>> &kps, std::vector<std::vect
     //         std::cout << nms_kps[i][j] << (j + 1 < nms_kps[i].size() ? ' ' : '\n');
     //     }
     // }
+enough:
+    std::cout<<"total amounf of keypoint extracted: "<<nms_kps.size()<<std::endl;
 }
 
 void Superpoint::extract_descriptor(zdl::DlSystem::ITensor* outputDesc, const std::vector<cv::Point2f> &final_kps, std::vector<std::vector<float>> &descriptor, const int &desc_height, const int &desc_width, const int &desc_channel, const int &hm_channel)
@@ -230,11 +245,10 @@ void Superpoint::extract_descriptor(zdl::DlSystem::ITensor* outputDesc, const st
         for (int c=0; c<256; c++)    //iterate over channel to extract descriptor, 256 is the channel length
         {
             //bilinear interpolation
-            float q11 = outputDesc_ptr[c+w1*desc_channel+h1*desc_width*desc_channel];
-            float q12 = outputDesc_ptr[c+w1*desc_channel+h2*desc_width*desc_channel];
-            float q21 = outputDesc_ptr[c+w2*desc_channel+h1*desc_width*desc_channel];
-            float q22 = outputDesc_ptr[c+w2*desc_channel+h2*desc_width*desc_channel];
-            temp_descriptor[c] = (w2w*h2h)*q11 + (ww1*h2h)*q21 + (w2w*hh1)*q12 + (ww1*hh1)*q22;
+            temp_descriptor[c] = (w2w*h2h)*outputDesc_ptr[c+w1*desc_channel+h1*desc_width*desc_channel] + \
+            (ww1*h2h)*outputDesc_ptr[c+w2*desc_channel+h1*desc_width*desc_channel] + \
+            (w2w*hh1)*outputDesc_ptr[c+w1*desc_channel+h2*desc_width*desc_channel] + \
+            (ww1*hh1)*outputDesc_ptr[c+w2*desc_channel+h2*desc_width*desc_channel];
         }
         descriptor.push_back(temp_descriptor);
     }
