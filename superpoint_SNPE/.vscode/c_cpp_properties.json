@@ -4,7 +4,7 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${workspaceFolder}/snpe/include"
+                "${workspaceFolder}/../include/snpe"
             ],
             "defines": [],
             "compilerPath": "/usr/bin/gcc",

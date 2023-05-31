@@ -35,41 +35,19 @@ endif()
 #x64编译
 if (CMAKE_SYSTEM_NAME STREQUAL CMAKE_HOST_SYSTEM_NAME)     #CMAKE_SYSTEM_NAME是内部参数，x64编译
     message( STATUS "comipling to system = ${CMAKE_HOST_SYSTEM_NAME}")
-    #添加系统路径内的库
+    message("${CMAKE_CURRENT_SOURCE_DIR}")
     #opencv
-    FIND_PACKAGE ( OpenCV REQUIRED COMPONENTS core highgui imgcodecs features2d)
-    if(OpenCV_FOUND)
-        message( STATUS "OpenCV_INCLUDE_DIRS = ${OpenCV_INCLUDE_DIRS}"  )
-        message( STATUS "OpenCV_LIBS = ${OpenCV_LIBS}"  )
-        message( STATUS "OpenCV_DIR = ${OpenCV_DIR}"  )
-    else()
-        message (FATAL_ERROR "Cannot find OpenCV")
-    endif()
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/x64/opencv")
+    list(APPEND EXTERNAL_LIBS opencv_core opencv_highgui opencv_imgcodecs opencv_features2d opencv_imgproc)
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/opencv")
     #glog
-    find_package(PkgConfig REQUIRED)
-    pkg_check_modules(glog REQUIRED libglog)
-    message( STATUS "Glog_INCLUDE_DIRS = ${glog_INCLUDE_DIRS}"  )
-    message( STATUS "Glog_LIBS = ${glog_LIBRARIES}"  )
-    message( STATUS "Glog_DIR = ${GLOG_DIR}"  )
-
-    list(APPEND EXTERNAL_LIBS ${OpenCV_LIBS} ${glog_LIBRARIES})
-    list(APPEND INCLUDE_DIR ${OpenCV_INCLUDE_DIRS} ${glog_INCLUDE_DIRS})
-
-    #添加不在系统路径下的外部库
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/x64/glog")
+    list(APPEND EXTERNAL_LIBS glog)
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/glog")
     #ncnn
-    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/lib")  
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/x64/ncnn")
     list(APPEND EXTERNAL_LIBS ncnn)
-    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/include")
-    # list(APPEND INCLUDE_DIR "/home/cvte-vm/NCNN/ncnn/build/src")
-    # list(APPEND INCLUDE_DIR "/home/cvte-vm/NCNN/ncnn/src")
-
-    #vulkan
-    # file(GLOB SOURCES1 "/home/cvte-vm/vulkan/1.2.189.0/x86_64/lib/*.a" )
-    # file(GLOB SOURCES2 "/home/cvte-vm/vulkan/1.2.189.0/x86_64/lib/*.so" )
-    # message("source1 is ${SOURCES1}")
-    # message("source2 is ${SOURCES2}")
-    # list(APPEND EXTERNAL_LIBS ${SOURCES1} ${SOURCES2})
-    # list(APPEND INCLUDE_DIR "/home/cvte-vm/vulkan/1.2.189.0/x86_64/include/vulkan")
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/ncnn")
 
 
 #添加外部库
@@ -79,37 +57,24 @@ elseif (CMAKE_SYSTEM_NAME STREQUAL "Android")
     #add android libs
     list(APPEND EXTERNAL_LIBS android log jnigraphics)
     #glog
-    link_directories("/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/glog/lib/arm64-v8a")
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/android64/glog")
     list(APPEND EXTERNAL_LIBS glog gflags gflags_nothreads)
-    list(APPEND INCLUDE_DIR "/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/glog/include")
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/glog")
     #opencv
-    link_directories("/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/lib/arm64-v8a")
-    list(APPEND EXTERNAL_LIBS opencv_world)
-    list(APPEND INCLUDE_DIR "/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include")
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/android64/opencv")
+    list(APPEND EXTERNAL_LIBS opencv_core opencv_highgui opencv_imgcodecs opencv_features2d opencv_imgproc)
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/opencv")
     #ncnn
-    link_directories("/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/ncnn/lib/arm64-v8a")
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/android64/ncnn")
     list(APPEND EXTERNAL_LIBS ncnn)
-    list(APPEND INCLUDE_DIR "/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/ncnn/include/ncnn")
-    # #vulkan
-    # link_directories("/home/cvte-vm/Downloads/unify_ndk-master/sources/third_party/vulkan/src/build-android/jniLibs/arm64-v8a")
-    # list(APPEND EXTERNAL_LIBS 
-    # VkLayer_core_validation 
-    # VkLayer_khronos_validation
-    # VkLayer_object_tracker
-    # VkLayer_parameter_validation
-    # VkLayer_threading
-    # VkLayer_unique_objects)
-    # list(APPEND INCLUDE_DIR "/home/cvte-vm/Downloads/unify_ndk-master/sources/third_party/vulkan/src/include/vulkan")
-    # #log
-    # link_directories("/home/cvte-vm/AndroidNDK/android-ndk-r21e-linux-x86_64/android-ndk-r21e/platforms/android-24/arch-arm64/usr/lib")
-    # list(APPEND EXTERNAL_LIBS log stdc++)
-
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/ncnn")
 
 endif()
 
 #添加内部库
 add_library(sp_lib SHARED
-"${CMAKE_CURRENT_SOURCE_DIR}/superpoint.cpp")
+"${CMAKE_CURRENT_SOURCE_DIR}/superpoint.cpp"
+"${CMAKE_CURRENT_SOURCE_DIR}/timer.cpp")
 list(APPEND INTERNAL_LIBS sp_lib)
 list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}")
 
@@ -128,7 +93,6 @@ message( STATUS "Include dir = ${INCLUDE_DIR}"  )
 #创建executable并链接内部库和外部库
 set(EXEC  
 "${CMAKE_CURRENT_SOURCE_DIR}/main.cpp"
-"${CMAKE_CURRENT_SOURCE_DIR}/timer.cpp"
 )
 add_executable(NCNN_superpoint ${EXEC} )
 

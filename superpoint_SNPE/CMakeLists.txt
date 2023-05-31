@@ -38,31 +38,18 @@ endif()
 #x64编译
 if (CMAKE_SYSTEM_NAME STREQUAL CMAKE_HOST_SYSTEM_NAME)     #CMAKE_SYSTEM_NAME是内部参数，x64编译
     message( STATUS "comipling to system = ${CMAKE_HOST_SYSTEM_NAME}")
-    #添加系统路径内的库
     #opencv
-    FIND_PACKAGE ( OpenCV REQUIRED COMPONENTS core highgui imgcodecs features2d)
-    if(OpenCV_FOUND)
-        message( STATUS "OpenCV_INCLUDE_DIRS = ${OpenCV_INCLUDE_DIRS}"  )
-        message( STATUS "OpenCV_LIBS = ${OpenCV_LIBS}"  )
-        message( STATUS "OpenCV_DIR = ${OpenCV_DIR}"  )
-    else()
-        message (FATAL_ERROR "Cannot find OpenCV")
-    endif()
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/x64/opencv")
+    list(APPEND EXTERNAL_LIBS opencv_core opencv_highgui opencv_imgcodecs opencv_features2d opencv_imgproc)
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/opencv")
     #glog
-    find_package(PkgConfig REQUIRED)
-    pkg_check_modules(glog REQUIRED libglog)
-    message( STATUS "Glog_INCLUDE_DIRS = ${glog_INCLUDE_DIRS}"  )
-    message( STATUS "Glog_LIBS = ${glog_LIBRARIES}"  )
-    message( STATUS "Glog_DIR = ${GLOG_DIR}"  )
-
-    list(APPEND EXTERNAL_LIBS ${OpenCV_LIBS} ${glog_LIBRARIES})
-    list(APPEND INCLUDE_DIR ${OpenCV_INCLUDE_DIRS} ${glog_INCLUDE_DIRS})
-
-    #添加不在系统路径下的外部库
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/x64/glog")
+    list(APPEND EXTERNAL_LIBS glog)
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/glog")
     #SNPE
-    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/snpe/lib/x64")  
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/x64/snpe")  
     list(APPEND EXTERNAL_LIBS HtpPrepare omp SNPE)
-    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/snpe/include")
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/snpe")
 
 
 
@@ -73,17 +60,17 @@ elseif (CMAKE_SYSTEM_NAME STREQUAL "Android")
     #add android libs
     list(APPEND EXTERNAL_LIBS android log jnigraphics)
     #glog
-    link_directories("/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/glog/lib/arm64-v8a")
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/android64/glog")
     list(APPEND EXTERNAL_LIBS glog gflags gflags_nothreads)
-    list(APPEND INCLUDE_DIR "/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/glog/include")
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/glog")
     #opencv
-    link_directories("/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/lib/arm64-v8a")
-    list(APPEND EXTERNAL_LIBS opencv_world)
-    list(APPEND INCLUDE_DIR "/home/cvte-vm/Downloads/unify_ndk-master/SrGroup/opencv/include")
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/android64/opencv")
+    list(APPEND EXTERNAL_LIBS opencv_core opencv_highgui opencv_imgcodecs opencv_features2d opencv_imgproc)
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/opencv")
     #SNPE
-    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/snpe/lib/arm64-v8a")
+    link_directories("${CMAKE_CURRENT_SOURCE_DIR}/../lib/android64/snpe")
     list(APPEND EXTERNAL_LIBS c++_shared SNPE)
-    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/snpe/include")
+    list(APPEND INCLUDE_DIR "${CMAKE_CURRENT_SOURCE_DIR}/../include/snpe")
 
 
 endif()

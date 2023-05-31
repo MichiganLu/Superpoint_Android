@@ -20,7 +20,7 @@ do
     esac
 done
 
-ANDROID_NDK=/home/cvte-vm/Downloads/unify_ndk-master
+ANDROID_NDK=/your_path_to_ANDROID_NDK
 CMAKE_TOOLCHAIN=$ANDROID_NDK/build/cmake/android.toolchain.cmake
 
 if [ "$SNPE_ARCH" = "android64" ]
