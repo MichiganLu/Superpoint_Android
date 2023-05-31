@@ -26,19 +26,19 @@ int main()
     #ifdef USE_ANDROID
     char *dlc_path = "../models/coco_manualL2_unshapedProb_uninterpolateDesc_sim.dlc";
     #else
-    char *dlc_path = "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_SNPE/coco_manualL2_unshapedProb_uninterpolateDesc_sim.dlc";
+    char *dlc_path = "../../../coco_manualL2_unshapedProb_uninterpolateDesc_sim.dlc";
     #endif
     Superpoint model(dlc_path);
 
     //input image
     #ifdef USE_ANDROID
-    const char* inputFile1 = "../img/1.ppm";
-    const char* inputFile2 = "../img/2.ppm";
+    const char* inputFile1 = "../img/3.ppm";
+    const char* inputFile2 = "../img/4.ppm";
     #else
-    // const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
-    // const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
-    const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/1.ppm";
-    const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/5.ppm";
+    const char* inputFile1 = "../../../../test_img/i_pool/1.ppm";
+    const char* inputFile2 = "../../../../test_img/i_pool/2.ppm";
+    // const char* inputFile1 = "../../../../test_img/v_dogman/1.ppm";
+    // const char* inputFile2 = "../../../../test_img/v_dogman/5.ppm";
     #endif
     std::ifstream inputList(inputFile1);
     if (!inputList) {
@@ -125,7 +125,7 @@ int main()
     drawMatches( img1rgb, kps1, img2rgb, kps2, good_matches, img_matches, cv::Scalar::all(-1),
                  cv::Scalar::all(-1), std::vector<char>(), cv::DrawMatchesFlags::NOT_DRAW_SINGLE_POINTS );
     // -- Show detected matches
-    // cv::imwrite("DSP_pool_0.008_0.77_top1k.jpg",img_matches);
+    cv::imwrite("x64_ipool_0.008_0.77_top1k.jpg",img_matches);
     cv::imshow("Good Matches", img_matches );
     cv::waitKey(0);
     cv::destroyAllWindows;

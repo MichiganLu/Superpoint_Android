@@ -2,7 +2,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 #设置project名
-project (superpoint_ncnn)
+project (superpoint_snpe)
 
 message("compiler is ${CMAKE_CXX_COMPILER}")
 message("system_name=${CMAKE_SYSTEM_NAME}, host_name=${CMAKE_HOST_SYSTEM_NAME}")
