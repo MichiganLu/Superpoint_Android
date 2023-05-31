@@ -1,5 +1,6 @@
 #!/bin/sh
-cd /home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN
+SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )    #get bash script file location
+cd $SCRIPT_DIR
 mkdir -p build
 cd ./build
 echo $(pwd)
