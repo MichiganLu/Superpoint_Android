@@ -1,5 +1,5 @@
 # Superpoint Android and X64 Implementation
-![results](x64_ipool_0.008_0.77_top1k.jpg)
+![results](result.png)
 
 **Supporting NCNN and SNPE implementation, runs on Ubuntu and Android** (tested for Ubuntu18 and Android24).
 
