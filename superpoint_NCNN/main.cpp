@@ -28,8 +28,8 @@ int main()
     char *param = "../models/coco_pretrained.param";
     char *bin = "../models/coco_pretrained.bin";
 #else
-    char *param = "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/coco_pretrained.param";
-    char *bin = "/home/cvte-vm/Deep_Feature_Extract/pytorch-superpoint/implementation/superpoint_NCNN/coco_pretrained.bin";
+    char *param = "../../../coco_pretrained.param";
+    char *bin = "../../../coco_pretrained.bin";
 #endif
     Superpoint model(param, bin);
 
@@ -38,10 +38,10 @@ int main()
     const char* inputFile1 = "../img/1.ppm";
     const char* inputFile2 = "../img/2.ppm";
 #else
-    const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/1.ppm";
-    const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/i_pool/2.ppm";
-    // const char* inputFile1 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/1.ppm";
-    // const char* inputFile2 = "/media/cvte-vm/C4CE54D9CE54C4F8/3D_Datasets/HPatches/hpatches-sequences-release/v_dogman/5.ppm";
+    const char* inputFile1 = "../../../../test_img/i_pool/1.ppm";
+    const char* inputFile2 = "../../../../test_img/i_pool/2.ppm";
+    // const char* inputFile1 = "../../../../test_img/v_dogman/1.ppm";
+    // const char* inputFile2 = "../../../../test_img/v_dogman/5.ppm";
 #endif
     std::ifstream inputList(inputFile1);
     if (!inputList) {

@@ -127,7 +127,7 @@ message( STATUS "Include dir = ${INCLUDE_DIR}"  )
 
 #创建executable并链接内部库和外部库
 set(EXEC  
-"${CMAKE_CURRENT_SOURCE_DIR}/test.cpp"
+"${CMAKE_CURRENT_SOURCE_DIR}/main.cpp"
 "${CMAKE_CURRENT_SOURCE_DIR}/timer.cpp"
 )
 add_executable(NCNN_superpoint ${EXEC} )
