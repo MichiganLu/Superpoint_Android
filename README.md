@@ -3,7 +3,7 @@
 
 **Supporting NCNN and SNPE implementation, runs on Ubuntu and Android** (tested for Ubuntu18 and Android24).
 
-**NO EXTRA DEPENDENCY!!!**  Just compile and run.
+**NO EXTRA DEPENDENCY**(assume your machine already set up for NCNN/SNPE).  Just compile and run.
 
 ## Running on Ubuntu x64 machine
 I will give an example of how to run with NCNN, it is similar procedure to run with SNPE.
